@@ -105,7 +105,7 @@ text {
   transform: scaleX(0);
   transform-origin: left;
   background: #6665ee;
-  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  animation: animate 5s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 .bar .progress-line.nourriture span{
   width: 45%;
@@ -134,7 +134,7 @@ text {
   border-right-width: 0px;
   border-top-color: #000;
   opacity: 0;
-  animation: showText2 0.5s 1.5s linear forwards;
+  animation: showText2 1.5s 2.5s linear forwards;
 }
 .progress-line span::after{
   position: absolute;
