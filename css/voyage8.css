@@ -242,47 +242,14 @@ text {
 #slideshow {
 	margin: 0 auto;
 	padding-top: 50px;
-	height: 600px;
+	height: 500px;
 	width: 100%;
     background: #0041ff;
     box-shadow: inset 29px 29px 34px #002cad,
-    inset -29px -29px 34px #0056ff;
+                inset -29px -29px 34px #0056ff;
 	box-sizing: border-box;
     border-radius: 55px;
 }
-
-.slideshow-title {
-	font-family: 'Allerta Stencil';
-	font-size: 62px;
-	color: #fff;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 25%;
-	letter-spacing: 3px;
-	font-weight: 300;
-}
-
-.sub-heading {
-	padding-top: 50px;
-	font-size: 18px;
-} .sub-heading-two {
-	font-size: 15px;
-} .sub-heading-three {
-	font-size: 13px;
-} .sub-heading-four {
-	font-size: 11px;
-} .sub-heading-five {
-	font-size: 9px;
-} .sub-heading-six {
-	font-size: 7px;
-} .sub-heading-seven {
-	font-size: 5px;
-} .sub-heading-eight {
-	font-size: 3px;
-} .sub-heading-nine {
-	font-size: 1px;
-}
-
 .entire-content {
 	margin: auto;
 	width: 190px;
@@ -348,7 +315,7 @@ text {
 }
 
 .content-carrousel img:hover {
-	transform: scale(1.8);
+	transform: scale(1.6);
 	transition: all 300ms;
 }
 
