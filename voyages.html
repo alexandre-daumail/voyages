@@ -1,110 +1,107 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Titre de la page</title>
-    <link rel="stylesheet" href="css/voyages.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  </head>
 
-  <body>
-    <header>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">USA</a>
-            <a href="#">Japon</a>
-            <a href="#">Espagne</a>
-            <a href="#">Contact</a>
-        </div>
-      <!-- Use any element to open the sidenav -->
-        <div class="menu" onclick="myFunction(this)">
-            <span onclick="openNav()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            </span>
-        </div>
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-      <script>/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          document.getElementById("main").style.marginLeft = "0";
-        }</script>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voyages</title>
+        <link rel = "icon" type = "image/png" href = "images/logo.png">
+        <link rel="stylesheet" href="css/voyages.css" media="all"><!--css principale-->
+        <link rel="stylesheet" href="https://schnaps.it/archive/css/reset.css" media="all"> <!-- reset des paramètres de page -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- création navbar -->
 
-    <main>
-        <div class='caroussel_diapo'>
-            <input checked id="carou_un" name="rotation" type="radio">
-            <label for="carou_un" id="point1">
-                <div class="car1"><a href="#">NewYork</a></div>
-            </label>
-            <input id="carou_deux" name="rotation" type="radio">
-            <label for="carou_deux"></label>
-            <input id="carou_trois" name="rotation" type="radio">
-            <label for="carou_trois"></label>
-            <input id="carou_quatre" name="rotation" type="radio">
-            <label for="carou_quatre"></label>
-            <input id="carou_cinq" name="rotation" type="radio">
-            <label for="carou_cinq"></label>
-            <input id="carou_six" name="rotation" type="radio">
-            <label for="carou_six"></label>
-            <input id="carou_sept" name="rotation" type="radio">
-            <label for="carou_sept"></label>
-            <input id="carou_huit" name="rotation" type="radio">
-            <label for="carou_huit"></label>
-            <div class="contenu_carou">
-            <div class="caroussel">
-            <img src="images/1.jpg">
-            <img src="images/2.jpg">
-            <img src="images/3.jpg">
-            <img src="images/4.jpg">
-            <img src="images/5.jpg">
-            <img src="images/6.jpg">
-            <img src="images/7.jpg">
-            </div>
-            </div>
-        </div>	
-    </main>
+    </head>
 
-        <div class="footer-dark">
-            <footer>
-                <div class="footer container">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3 item">
-                            <h3>Nos Voyages</h3>
-                            <ul>
-                                <li><a href="#">USA</a></li>
-                                <li><a href="#">Japon</a></li>
-                                <li><a href="#">Espagne</a></li>
-                            </ul>
+    <body>
+        <!--------------------------------------------------------                  MENU                                 -->
+        <div class="website">
+            <header class="header full-bleed" role="banner">
+                <div class="navbar">
+                    <a href="#home">Voyages</a>
+                    <a href="#news">Contacts</a>
+                    <div class="dropdown">
+                      <button class="dropbtn">Continents
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <div class="header">
+                          <h2>Destinations classées par continent</h2>
                         </div>
-                        <div class="col-sm-6 col-md-3 item">
-                            <h3>A Propos de nous</h3>
-                            <ul>
-                                <li><a href="#">Alexandre</a></li>
-                                <li><a href="#">Yonathan</a></li>
-                                <li><a href="#">Ismail</a></li>
-                            </ul>
+
+                        <div class="row">
+                            <div class="column">
+                                <h3>Europe</h3>
+                                <a href="voyages/voyage3.html">Londres</a>
+                                <a href="voyages/voyage2.html">Costa Brava</a>
+                                <a href="voyages/voyage7.html">Lettonie</a>
+                            </div>
+                            <div class="column">
+                                <h3>Asie</h3>
+                                <a href="voyages/voyage5.html">Japon</a>
+                            </div>
+                            <div class="column">
+                                <h3>Afrique</h3>
+                                <a href="voyages/voyage1.html">Algérie</a>
+                                <a href="voyages/voyage6.html">Maroc</a>
+                            </div>
+                            <div class="column">
+                                <h3>Amérique</h3>
+                                <a href="voyages/voyage8.html">New York</a>
+                            </div>
+                            <div class="column">
+                                <h3>Océanie</h3>
+                                <a href="voyages/voyage9.html">Nouvelle-Zélande</a>
+                                <a href="voyages/voyage4.html">Australie</a>
+                            </div>
                         </div>
-                        <div class="col-md-6 item text">
-                            <h3>Voyages 1.01</h3>
-                            <p>Nous espérons que nos témoignages vous permettront de profiter de vos itinérances au maximum!</p>
-                        </div>
-                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                      </div>
                     </div>
-                    <p class="copyright">Voyages 1.01 © 2021</p>
-                </div>
-        </footer>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+                    <div class="dropdown2">
+                        <button class="dropbtn2">Auteurs
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+
+                        <div class="dropdown-content2">
+                            <div class="header">
+                                <h2>Voyages classés par auteur</h2>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <h3>Alexandre</h3>
+                                    <a href="voyages/voyage1.html">Algérie</a>
+                                    <a href="voyages/voyage2.html">Costa Brava</a>
+                                    <a href="voyages/voyage3.html">Londres</a>
+                                </div>
+                                <div class="column">
+                                    <h3>Ismaïl</h3>
+                                    <a href="voyages/voyage4.html">Australie</a>
+                                    <a href="voyages/voyage5.html">Japon</a>
+                                    <a href="voyages/voyage6.html">Maroc</a>
+                                </div>
+                                <div class="column">
+                                    <h3>Yonathan</h3>
+                                    <a href="voyages/voyage7.html">Lettonie</a>
+                                    <a href="voyages/voyage8.html">New York</a>
+                                    <a href="voyages/voyage9.html">Nouvelle-Zélande</a>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+            </header>
+        
+            <main id="main" role="main" class="main">
+                <p>Yoo ch'ai lu dans les DNA que le Racing a encore perdu contre Oberschaeffolsheim. Verdammi et moi ch'avais donc parié deux knacks et une flammekueche. Ah so ? T'inquiète, ch'ai ramené du schpeck, du chambon, un kuglopf et du schnaps dans mon rucksack. Allez, s'guelt ! Wotch a kofee avec ton bibalaekaess et ta wurscht ? Yeuh non che suis au réchime, je ne mange plus que des Grumbeere light et che fais de la chym avec Chulien. Tiens, un rottznoz sur le comptoir.</p>
+                <p>Tu restes pour le lotto-owe ce soir, y'a baeckeoffe ? Yeuh non, merci vielmols mais che dois partir à la Coopé de Truchtersheim acheter des mänele et des rossbolla pour les gamins. Hopla tchao bissame ! Consectetur adipiscing elit amet elementum nullam bissame bredele Heineken picon bière gal sed risus, condimentum Verdammi ch'ai ac réchime météor barapli s'guelt quam, non Christkindelsmärik blottkopf, Carola tellus rucksack vielmols, Gal !</p>
+            </main>
+        
+            <footer class="footer full-bleed" role="contentinfo">
+                <p>Lorem Elsass ipsum lacus leverwurscht Wurschtsalad mamsell Gal. gewurztraminer turpis, suspendisse commodo Oberschaeffolsheim ornare aliquam semper Miss Dahlias Mauris turpis sagittis kuglopf, Gal !</p>
+            </footer>
+        
         </div>
-  </body>
+    </body>
+
 </html>

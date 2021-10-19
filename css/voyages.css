@@ -1,302 +1,144 @@
-*{margin:0;padding:0;}
+/* Ce fichier CSS reset est utilisé : https://schnaps.it/archive/css/reset.css */
+/* ---------------------------------------------------------------------------------------------création d'une trame à partir de ce site: https://schnaps.it/ */
 
-body, html{height:100%;}
-    
-main{
-max-width:1280px;
-min-height:100%;
-margin: 3px;
-position:relative;
-}
-    
-/*-----------------------------Off canvas Menu --------------------------*/
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+:root {
+    --website-width: 1024px;
+    --spacer-small: 2rem;
   }
   
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  .website {
+    display: grid;
+    grid-template-columns:
+     [website-start] minmax(var(--spacer-small), 1fr)
+     [content-start] minmax(auto, var(--website-width)) [content-end]
+     minmax(var(--spacer-small), 1fr) [website-end];
+  }
+  .website > * {
+    grid-column: content-start / content-end;
   }
   
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
+  .full-bleed {
+    display: grid;
+    grid-template-columns: inherit;
+    grid-column: website-start / website-end;
+  }
+  .full-bleed > * {
+    grid-column: content-start / content-end;
   }
   
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-    
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+  /* Bonus : Toute la hauteur ? */
+  // .website {min-height: 100vh;}
+  
+  /* ---------------------------------------------------------------------Création d'un menu à partir de ce site :https://www.w3schools.com/howto/howto_css_mega_menu.asp */
 
-  /* Bouton menu */
-
-  .menu {
-    display: inline-block;
-    cursor: pointer;
+  * {
+    box-sizing: border-box;
   }
   
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
+  body {
+    margin: 0;
+  }
+  
+  .navbar {
+    overflow: hidden;
     background-color: #333;
-    margin: 6px 6px;
-    transition: 0.4s;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
-  /* Rotate first bar */
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
   }
   
-  /* Fade out the second bar */
-  .change .bar2 {
-    opacity: 0;
+  .dropdown, .dropdown2 {
+    float: left;
+    overflow: hidden;
   }
   
-  /* Rotate last bar */
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-  }
-
-  /* -------------------------------------------------------- FOOTERS-------------------------------*/
-
-  .footer-dark {
-    padding:50px 0;
-    color:#f0f9ff;
-    background-color:#282d32;
+  .dropdown .dropbtn, .dropdown2 .dropbtn2 {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
   }
   
-  .footer-dark h3 {
-    margin-top:0;
-    margin-bottom:12px;
-    font-weight:bold;
-    font-size:16px;
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
   }
+
+  .navbar a:hover, .dropdown2:hover .dropbtn2 {
+    background-color: green;
+  }
+
   
-  .footer-dark ul {
-    padding:0;
-    list-style:none;
-    line-height:1.6;
-    font-size:14px;
-    margin-bottom:0;
-  }
-  
-  .footer-dark ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.6;
-  }
-  
-  .footer-dark ul a:hover {
-    opacity:0.8;
-  }
-  
-  @media (max-width:767px) {
-    .footer-dark .item:not(.social) {
-      text-align:center;
-      padding-bottom:20px;
-    }
-  }
-  
-  .footer-dark .item.text {
-    margin-bottom:36px;
-  }
-  
-  @media (max-width:767px) {
-    .footer-dark .item.text {
-      margin-bottom:0;
-    }
-  }
-  
-  .footer-dark .item.text p {
-    opacity:0.6;
-    margin-bottom:0;
-  }
-  
-  .footer-dark .item.social {
-    text-align:center;
-  }
-  
-  @media (max-width:991px) {
-    .footer-dark .item.social {
-      text-align:center;
-      margin-top:20px;
-    }
-  }
-  
-  .footer-dark .item.social > a {
-    font-size:20px;
-    width:36px;
-    height:36px;
-    line-height:36px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
-    margin:0 8px;
-    color:#fff;
-    opacity:0.75;
-  }
-  
-  .footer-dark .item.social > a:hover {
-    opacity:0.9;
-  }
-  
-  .footer-dark .copyright {
-    text-align:center;
-    padding-top:24px;
-    opacity:0.3;
-    font-size:13px;
-    margin-bottom:0;
-  }
-
-  /*--------------------------------------------------carroussel-------------------------*/
-
-  /*****carrousel 3d avec navigation*****/
-
-*{box-sizing: border-box}
-
-
-img{max-width:100%}
-	
-	
-	
-	
-	
-.caroussel_diapo input{position:absolute;left:-9999px}
-    
-
-.caroussel_diapo{	
-position:relative;
-text-align:center;
-margin:0 auto;
-width: 80vh;}
-
-
-.contenu_carou {
-
-width:100%;
-height:332px;
-display: flex;
-justify-content: center;
-
-perspective:4000px}
-
-
-.caroussel{
-
-transform-style:preserve-3d;
-position:relative;
-width:500px;
-height:332px;
-transition:1s
-	
-	}
-
-.caroussel img {
-	
-position:absolute;
-top:0;left:0;
-outline:1px solid transparent;
-backface-visibility:hidden;
-transition:1s;
-height: 80vh
-	
-	}
-
-.caroussel img{filter:blur(3px);opacity:.8}	
-.caroussel img:nth-child(1){transform:translate3d(0,0,540px) scale(.8)}
-.caroussel img:nth-child(2){transform:rotateY(45deg) translateZ(540px) scale(.8)}
-.caroussel img:nth-child(3){transform:rotateY(90deg) translateZ(540px) scale(.8)}
-.caroussel img:nth-child(4){transform:rotateY(135deg) translateZ(540px) scale(.8)}
-.caroussel img:nth-child(5){transform:rotateY(180deg) translateZ(540px) scale(.8)}
-.caroussel img:nth-child(6){transform:rotateY(225deg) translateZ(540px) scale(.8)}
-.caroussel img:nth-child(7){transform:rotateY(270deg) translateZ(540px) scale(.8)}
-.caroussel img:nth-child(8){transform:rotateY(315deg) translateZ(540px) scale(.8)}
-
-.caroussel_diapo input[type=radio] + label {
-	
-cursor:pointer;
-background:hsl(203,77%,81%);
-display:inline-block;
-width:20px;
-border-radius:50%;
-height:20px;
-margin-top: 50px;	
-}
-	
-.caroussel_diapo input[type=radio]:checked + label{background:hsl(203,77%,61%)}
-
-.caroussel_diapo label{background:hsl(203,77%,61%)}
-
-
-
-.caroussel_diapo input[name="rotation"]:checked ~ .contenu_carou .caroussel img:nth-child(n){
-	filter:drop-shadow(12px 12px 7px hsla(0,0%,0%,.5))
-	
-	}	
-
-/*gauche*/
-.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px)}
-.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-45deg)}
-.caroussel_diapo #carou_trois:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-90deg)}
-.caroussel_diapo #carou_quatre:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-135deg)}
-.caroussel_diapo #carou_cinq:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-180deg)}
-.caroussel_diapo #carou_six:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-225deg)}
-.caroussel_diapo #carou_sept:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-270deg)}
-.caroussel_diapo #carou_huit:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-315deg)}
-
-
-/*droite*/
-.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel img:nth-child(1){transform:translateZ(540px) scale(1);opacity:1}
-.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel img:nth-child(2){transform:rotateY(45deg) translateZ(540px) scale(1);opacity:1}
-.caroussel_diapo #carou_trois:checked ~ .contenu_carou .caroussel img:nth-child(3){transform:rotateY(90deg) translateZ(540px) scale(1);opacity:1}
-.caroussel_diapo #carou_quatre:checked ~ .contenu_carou .caroussel img:nth-child(4){transform:rotateY(135deg) translateZ(540px) scale(1);opacity:1}
-.caroussel_diapo #carou_cinq:checked ~ .contenu_carou .caroussel img:nth-child(5){transform:rotateY(180deg) translateZ(540px) scale(1);opacity:1}
-.caroussel_diapo #carou_six:checked ~ .contenu_carou .caroussel img:nth-child(6){transform:rotateY(225deg) translateZ(540px) scale(1);opacity:1}
-.caroussel_diapo #carou_sept:checked ~ .contenu_carou .caroussel img:nth-child(7){transform:rotateY(270deg) translateZ(540px) scale(1);opacity:1}
-.caroussel_diapo #carou_huit:checked ~ .contenu_carou .caroussel img:nth-child(8){transform:rotateY(315deg) translateZ(540px) scale(1);opacity:1}
-
-.car1{
-    font-size: 30px;
+  .dropdown-content, .dropdown-content2 {
     display: none;
-    background-color: white;
     position: absolute;
-    z-index: 1;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    min-width: 160px;
-
-}
-#point1:hover .car1{
-    display: block;
-    
-}
+    z-index: 1;
+  }
   
+  .dropdown-content .header {
+    background: red;
+    padding: 16px;
+    color: white;
+  }
+
+  .dropdown-content2 .header {
+    background: green;
+    padding: 16px;
+    color: white;
+  }
+
+  
+  .dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2 {
+    display: block;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #ccc;
+    height: 250px;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .column a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      height: auto;
+    }
+  }
