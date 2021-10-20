@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/NY.jpg">
+    <link rel="stylesheet" href="css/voyage8.css">
+    <title>NewYork</title>
+</head>
+<body>
+    <div class="bigone">
+    <header></header>
+    <main>
+        <div class="nyc1">
+            <video src="images/pexels-cityxcape-5838634.mp4" autoplay loop muted></video>
+            <div class="nytext1">
+                <svg width='100%' height='100%'>
+                    <filter id='money'>
+                      <feMorphology in='SourceGraphic' operator='dilate' radius='2' result='expand'/>
+                  
+                      <feOffset in='expand' dx='1' dy='1' result='shadow_1'/>
+                      <feOffset in='expand' dx='2' dy='2' result='shadow_2'/>
+                      <feOffset in='expand' dx='3' dy='3' result='shadow_3'/>
+                      <feOffset in='expand' dx='4' dy='4' result='shadow_4'/>
+                      <feOffset in='expand' dx='5' dy='5' result='shadow_5'/>
+                      <feOffset in='expand' dx='6' dy='6' result='shadow_6'/>
+                      <feOffset in='expand' dx='7' dy='7' result='shadow_7'/>
+                  
+                      <feMerge result='shadow'>
+                        <feMergeNode in='expand'/>
+                        <feMergeNode in='shadow_1'/>
+                        <feMergeNode in='shadow_2'/>
+                        <feMergeNode in='shadow_3'/>
+                        <feMergeNode in='shadow_4'/>
+                        <feMergeNode in='shadow_5'/>
+                        <feMergeNode in='shadow_6'/>
+                        <feMergeNode in='shadow_7'/>
+                      </feMerge>
+                  
+                      <feFlood flood-color='#ebe7e0'/>
+                      <feComposite in2='shadow' operator='in' result='shadow'/>
+                  
+                      <feMorphology in='shadow' operator='dilate' radius='1' result='border'/>
+                      <feFlood flood-color='#35322a' result='border_color'/>
+                      <feComposite in2='border' operator='in' result='border'/>
+                  
+                      <feOffset in='border' dx='1' dy='1' result='secondShadow_1'/>
+                      <feOffset in='border' dx='2' dy='2' result='secondShadow_2'/>
+                      <feOffset in='border' dx='3' dy='3' result='secondShadow_3'/>
+                      <feOffset in='border' dx='4' dy='4' result='secondShadow_4'/>
+                      <feOffset in='border' dx='5' dy='5' result='secondShadow_5'/>
+                      <feOffset in='border' dx='6' dy='6' result='secondShadow_6'/>
+                      <feOffset in='border' dx='7' dy='7' result='secondShadow_7'/>
+                      <feOffset in='border' dx='8' dy='8' result='secondShadow_8'/>
+                      <feOffset in='border' dx='9' dy='9' result='secondShadow_9'/>
+                      <feOffset in='border' dx='10' dy='10' result='secondShadow_10'/>
+                      <feOffset in='border' dx='11' dy='11' result='secondShadow_11'/>
+                  
+                      <feMerge result='secondShadow'>
+                        <feMergeNode in='border'/>
+                        <feMergeNode in='secondShadow_1'/>
+                        <feMergeNode in='secondShadow_2'/>
+                        <feMergeNode in='secondShadow_3'/>
+                        <feMergeNode in='secondShadow_4'/>
+                        <feMergeNode in='secondShadow_5'/>
+                        <feMergeNode in='secondShadow_6'/>
+                        <feMergeNode in='secondShadow_7'/>
+                        <feMergeNode in='secondShadow_8'/>
+                        <feMergeNode in='secondShadow_9'/>
+                        <feMergeNode in='secondShadow_10'/>
+                        <feMergeNode in='secondShadow_11'/>
+                      </feMerge>
+                  
+                      <feImage x='0' y='0' width='600' height='200' xlink:href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/stripes.svg'/>
+                      <feComposite in2='secondShadow' operator='in' result='secondShadow'/>
+                  
+                      <feMerge>
+                        <feMergeNode in='secondShadow'/>
+                        <feMergeNode in='border'/>
+                        <feMergeNode in='shadow'/>
+                        <feMergeNode in='SourceGraphic'/>
+                      </feMerge>
+                    </filter>
+                  
+                    <text dominant-baseline='middle' text-anchor='middle' x='50%' y='50%'>
+                        Bienvenue à NewYork City
+                        La ville qui ne dort jamais
+                    </text>
+                  </svg>
+                
+            </div>
+        </div>
+        <div class="nyc2">
+            <div class="classement">
+                <h1>Le classement de Yonathan</h1>
+                <div class="skill-bars">
+                    <div class="bar">
+                      <div class="info">
+                        <span>Nourriture</span>
+                      </div>
+                      <div class="progress-line nourriture">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>Culture</span>
+                      </div>
+                      <div class="progress-line musee">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>Amabilité</span>
+                      </div>
+                      <div class="progress-line amabalite">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>Attrait Visuel</span>
+                      </div>
+                      <div class="progress-line attrait">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+            <h1 style="text-align: center;">Une petite faim à NewYork ?</h1> 
+            <div class="description">
+
+              <p class="bouffe">Bienvenue dans la séction consacré à mon classement sur la ville de NewYork. Bien que ce systeme soit completement subjectif je vais essayer de vous accompagner sur ma notation.
+              <br>Tout d'abord la nourriture, bon c'est vrai qu'en tant que français c'est plus compliqué de trouver quelque chose de meilleur à ce niveau en dehors du pays. Mais pour NewYork, je me suis essayé à plusieurs test, tout d'abord un restaurant italien <a href="https://www.google.com/maps/place/Tony's+Di+Napoli/@40.7563292,-73.9854809,15z/data=!4m9!1m2!2m1!1srestaurant+italien+new+york!3m5!1s0x89c2585523aa2d55:0x831dafc2627c8d16!8m2!3d40.7563967!4d-73.9854441!15sChtyZXN0YXVyYW50IGl0YWxpZW4gbmV3IHlvcmtaHSIbcmVzdGF1cmFudCBpdGFsaWVuIG5ldyB5b3JrkgESaXRhbGlhbl9yZXN0YXVyYW50">Tony's Di Napoli</a>. 
+              <br>Allons au plus court, c'était décevant. On pourrait croire que comme lieu principale d'une vague d'immigration Italienne, NewYork abritrait les meilleurs restaurant Italien, surtout que celui là m'a été chaudement recommandé. 
+              <br>Les deux autres essais (outre la nourriture de l'hotel que je ne compterai pas par respect pour eux...) furent pour 2 chaines de restaurant. Qui dit USA dit Macdonald. Donc je suis allé <a href="https://www.google.com/search?sa=X&rlz=1C1ONGR_frFR974FR975&biw=1536&bih=754&tbs=lf:1,lf_ui:4&tbm=lcl&q=mcdo+manhattan&rflfq=1&num=10&ved=2ahUKEwi9yvOctNbzAhVzAWMBHSOdAIsQtgN6BAgREAQ#rlfi=hd:;si:11082701840587943204;mv:[[40.74318404368892,-73.98924940621139],[40.738322949155425,-74.00122278725387],null,[40.74075354082873,-73.99523609673263],17]">là</a>
+              <br>Que dire? Si ce n'est que celà m'a réconcilier avec le Mcdo en France. En effet le veritable interet de cette chaine là bas c est le prix. il est indeniable que le rapport quantité/prix est incroyable, mais la qualité on repassera. 
+              <br>La deuxieme chaine quant à elle fut une revelation: <a href="https://www.google.com/search?q=chipotle+manhatta&rlz=1C1ONGR_frFR974FR975&biw=1536&bih=754&tbm=lcl&ei=yLJuYbuYFIiDjLsPwqOGkAw&oq=chipotle+manhatta&gs_l=psy-ab.3..0i19k1l6j0i22i30i19k1l4.2845.6592.0.6767.9.9.0.0.0.0.120.682.8j1.9.0....0...1c.1.64.psy-ab..0.9.682...0i512i433k1j0i512k1j0i457i67k1j0i402k1.0.M9ZsL2CNHFI#rlfi=hd:;si:15382011795005072015;mv:[[40.7546254071352,-73.97710094936653],[40.75219532241329,-73.98308763988777],null,[40.75341037587661,-73.98009429462715],18]">chipotlé</a>. Enfin des produits frais! des tacos de qualité plus qu acceptable. Pour l'anecdote ne demander pas d'ice tea si vous vous attendez à boir la boisson de lipton.
+              <br>je me suis retrouvé avec 70 cl (oui parceque les tailles des boissons sont assez incroyable) de thé froid, literallement. 
+              <br>Le dernier test, et le plus concluant (ce qui sauve honnetement la note de cette catégorie) est le <a href="https://www.google.com/maps/place/Shake+Shack/@40.7582598,-73.9896718,19.69z/data=!3m1!5s0x89c2585382e46965:0x77c8b99288178919!4m9!1m2!2m1!1stime+square+shake+shack+manhattan!3m5!1s0x89c258537f207085:0xf25fd164736a3707!8m2!3d40.758432!4d-73.989219!15sCiF0aW1lIHNxdWFyZSBzaGFrZSBzaGFjayBtYW5oYXR0YW4iA4gBAVojIiF0aW1lIHNxdWFyZSBzaGFrZSBzaGFjayBtYW5oYXR0YW6SARRoYW1idXJnZXJfcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSeE1uTjJZMlZCRUFF">shake shack</a>
+              <br>Un des meilleur burger que j'ai mangé dans ma vie (le meilleur ne fut pas longtemps après dans une petite ville du Wisconsin). Un gout incroyable, presque aussi incroyable que le temps d'attente et la queue sur l'avenue pour y rentrer. </p>
+              <img class="shake" src="images/6.jpg">
+            
+
+            </div>
+            <h1 style="text-align: center;">On se fait un Musée ?</h1>
+            <div class="description">
+                <img class="moma" src="images/moma.jpg">
+                <p class="Culture">La culture à NewYork est un vrai régal. Entre les differents musées, comedie musicale, théatre et autre happening dans la rue, cette ville fourmille de vie culturelle.
+                <br>A commencé par le MoMa qui est un musée qui architecturalement est incroyable. L'exterieur ressemble à un enieme batiment en verre, mais une fois à l'interieur le voyage commence. Entre les volumes des pieces, les differentes salles d'exposition et leurs vue sur les toits de NY, on s amuse à découvrir des oeuvres que l'on a vu qu'en photo. 
+                <br>Pour l'anecdote je me suis perdu dans le MoMa et me suis retrouvé dans une piece avec l'escalier de secours, en me retournant je suis tombé sur un tableau de Chagal (un de mes peintres préféré). C'était incroyable, cette toile de maitre dans un lieu si anecdotique rajouté au contraste et permettait un autre regard sur l'oeuvre.
+                <br>Un autre monument de la culture est broadway, voir un enchainement d'autant de théâtre, de comédie musicale à la suite est tout simplement merveilleux. Au moment où j'étais la bas la piece du moment etait la tristement célèbre <a href="https://www.lexpress.fr/culture/scene/spiderman-la-comedie-musicale-pas-convaincant_1002499.html">Spider-man</a>
+                <br>J'avoue ne pas avoir grand chose à rajouter tant cette ville est exceptionnel pour tout ce qui aime la culture, rien que la visite du MoMa et du MET prendrait facilement une semaine.</p>
+                <img class="brod" src="images/brod.jpg">
+            </div>
+            <h1 style="text-align: center;"> Un parisien à NewYork</h1>
+            <div class="description">
+                <img class="monde" src="images/monde2.jpg">
+                <p class="bouffe">Pour commencer je me dois de préciser qu'au moment où je suis allé à NewYork j'habitais Paris. Pourquoi cette précision me demanderez vous ? Je vous répondrais par une autre question : va-t-on à Paris pour les parisiens?
+                <br>La réponse est bien evidement non. Et elle est la meme pour NewYork voir pire. Les NewYorkais sont les "parisiens" des USA, arrogant, fier et ne pensant qu'en dehors de NYC rien n'est bien. L'activité y est tellement frénétique qu'il n'est pas rare de se faire bousculer par queql'un dans les metros ou dans les rues.
+                <br>Cette constatation ne vaut que pour NYC, les autres villes que j'ai pu voir m'ont donné un autre aspect des américains. En effet je suis allé dans un village du Wisconsin pour thangsgiving, la parade des associations s'est suivi d'une soirée porte ouverte de tout les commerçants de la rue principale. 
+                <br>Ce qui m'a permis de me rendre compte que les americains ( en comparant aux personnes rencontrées à Whashington D.C.) était plutot de nature curieuse et de savoir comment l'on pouvait vivre et avide de faire découvrir des lieu et divertissement sur leurs pays.
+                </p>
+            </div>
+           <h1 style="text-align: center;">Une ville incroyable</h1>
+           <!-- 3D Slideshow Section --> 
+            <section id="slideshow">
+                <div class="entire-content">
+                    <div class="content-carrousel">
+                        <figure class="shadow"><img src="images/ange.jpg"/></figure>
+                        <figure class="shadow"><img src="images/avenue.jpg"/></figure>
+                        <figure class="shadow"><img src="images/barque.jpg"/></figure>
+                        <figure class="shadow"><img src="images/brooklinbridge.jpg"/></figure>
+                        <figure class="shadow"><img src="images/chrisler.jpg"/></figure>
+                        <figure class="shadow"><img src="images/grdcentral.jpg"/></figure>
+                        <figure class="shadow"><img src="images/light.jpg"/></figure>
+                        <figure class="shadow"><img src="images/nyc.jpg"/></figure>
+                        <figure class="shadow"><img src="images/moi.jpg"/></figure>
+                    </div>
+                </div>  
+            </section>
+            <p class="fooot">Comme une image vaut mieux que mille mots voilà 9 images pour dire à quel point cette ville est incroyable (et vu la taille des immeuble dangeureuse pour les Cervicales)</p>
+
+        </div>
+        <div class="nyc3">
+            <h1 style="text-align: center;">Un petit tour d'horizons des USA</h1>
+            <section id="slider">
+                <input type="radio" name="slider" id="s1">
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3">
+                <input type="radio" name="slider" id="s4">
+                <input type="radio" name="slider" id="s5"checked>
+                <input type="radio" name="slider" id="s6">
+                <input type="radio" name="slider" id="s7">
+                <input type="radio" name="slider" id="s8">
+                <input type="radio" name="slider" id="s9">
+                <input type="radio" name="slider" id="s10">
+                <input type="radio" name="slider" id="s11">
+                <label for="s1" id="slide1"></label>
+                <label for="s2" id="slide2"></label>
+                <label for="s3" id="slide3"></label>
+                <label for="s4" id="slide4"></label>
+                <label for="s5" id="slide5"></label>
+                <label for="s6" id="slide6"></label>
+                <label for="s7" id="slide7"></label>
+                <label for="s8" id="slide8"></label>
+                <label for="s9" id="slide9"></label>
+                <label for="s10" id="slide10"></label>
+                <label for="s11" id="slide11"></label>
+              </section>
+        </div>
+    </main>
+    <footer></footer>
+    
+    </div>
+    
+    
+</body>
+</html>
