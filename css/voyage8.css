@@ -360,7 +360,7 @@ text {
   }
   
   #slider {
-    height: 35vh;
+    height: 55vh;
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -484,17 +484,50 @@ text {
   }
 
   
-  #slide1 { background-image: url(/images/usa1.jpg) }
-  #slide2 { background-image: url(/images/usa2.jpg) }
-  #slide3 { background-image: url(/images/usa3.jpg) }
-  #slide4 { background-image: url(/images/usa4.jpg)  }
-  #slide5 { background-image: url(/images/usa5.jpg) }
-  #slide6 { background-image: url(/images/usa6.jpg)  }
-  #slide7 { background-image: url(/images/usa7.jpg)  }
-  #slide8 { background-image: url(/images/usa8.jpg)  }
-  #slide9 { background-image: url(/images/usa9.jpg)  }
-  #slide10 { background-image: url(/images/usa10.jpg)  }
-  #slide11 { background-image: url(/images/usa12.jpg)  }
+  #slide1 { background-image: url(../images/usa1.jpg) }
+  #slide2 { background-image: url(../images/usa2.jpg) }
+  #slide3 { background-image: url(../images/usa3.jpg) }
+  #slide4 { background-image: url(../images/usa4.jpg)  }
+  #slide5 { background-image: url(../images/usa5.jpg) }
+  #slide6 { background-image: url(../images/usa6.jpg)  }
+  #slide7 { background-image: url(../images/usa7.jpg)  }
+  #slide8 { background-image: url(../images/usa8.jpg)  }
+  #slide9 { background-image: url(../images/usa9.jpg)  }
+  #slide10 { background-image: url(../images/usa10.jpg)  }
+  #slide11 { background-image: url(../images/usa12.jpg)  }
+#slide1{
+  background-size: cover;
+}
+#slide2{
+  background-size: cover;
+}
+#slide3{
+  background-size: cover;
+}
+#slide4{
+  background-size: cover;
+}
+#slide5{
+  background-size: cover;
+}
+#slide6{
+  background-size: cover;
+}
+#slide7{
+  background-size: cover;
+}
+#slide8{
+  background-size: cover;
+}
+#slide9{
+  background-size: cover;
+}
+#slide10{
+  background-size: cover;
+}
+#slide11{
+  background-size: cover;
+}
 
 
 
