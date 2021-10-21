@@ -1,0 +1,144 @@
+.bigone{
+    height: 100vh;
+    width: 100vw;
+    background: white;
+}
+.main1{
+    display: flex;
+    flex-direction: column;
+}
+#sec1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.loader__ring {
+    transform-origin: center;
+    /* animation: grow 60s linear infinite; */
+  }
+  .loader__inscription {
+    position: relative;
+    width: 100%;
+    transform-origin: center;
+    animation: ring 60s linear infinite, opacity 1.5s linear infinite alternate;
+    z-index: 1;
+
+  }
+  .loader__container{
+      width: 100%;
+      height: 100%;
+
+  }
+
+  .loader__innerring {
+    position: absolute;
+    transform-origin: center;
+    width: 28%;
+    left: 37%;
+    top: 6%;
+    animation: pivote 3s linear infinite;
+    z-index: auto;
+    border-radius: 50%;
+  }
+#golum:hover{
+    cursor: url(../images/golum.png), auto;
+    display: block;
+}
+
+  .loader__innerring a{
+      width: 100%;
+      height: 100%;
+
+  }
+  @keyframes ring {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+#sec3{
+    display: flex;
+}
+.agauche{
+    width: 30%;
+    height: auto;
+    position: relative;
+}
+.agauche img{
+    width: 100%;
+    height: auto;
+}
+
+.adroite{
+    width: 30%;
+    height: auto;
+    position: relative;
+}
+.adroite img{
+    width: 100%;
+    height: auto;
+}
+.aumilieu{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.flag{
+    width: 25%;
+    height: auto;
+    margin: 0;
+}
+.aumilieu h1{
+    margin: 0;
+}
+.balon{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 143%;
+    left: 21%;
+    animation: translate 10s ease-in-out alternate infinite,
+                rotate 10s ease-in alternate infinite ;
+    
+}
+.balon img{
+    width: 100%;
+    height: auto;
+
+}
+@keyframes translate{
+    from{
+        top: 143%;
+        left: 21%;
+    }
+    to{
+            top: 133%;
+            left: 65%;
+    }
+}
+@keyframes rotate{
+    0%{
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+
+  50% {
+      transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
