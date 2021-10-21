@@ -10,14 +10,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- création navbar -->
     </head>
     <body>
-        <header>  
-            <div class="navbar">
-                <a href="#home">Voyages</a>
-                <a href="#news">Contacts</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Continents
-                        <i class="fa fa-caret-down"></i>
-                    </button>
+        <header>
+                <h1>Voyage 1</h1>
+                <p>L'Algérie</p> 
+        </header> 
+
+        <nav>
+            <a class="home" href="../voyages.html">Voyages</a>
+            <div class="dropdown">
+                <button class="dropbtn">Continents
+                    <i class="fa fa-caret-down"></i>
+                </button>
                 <div class="dropdown-content">
                     <div class="header">
                     <h2>Destinations classées par continent</h2>
@@ -50,70 +53,135 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
 
-                <div class="dropdown2">
-                    <button class="dropbtn2">Auteurs
-                    <i class="fa fa-caret-down"></i>
-                    </button>
+            <div class="dropdown2">
+                <button class="dropbtn2">Auteurs
+                <i class="fa fa-caret-down"></i>
+                </button>
 
-                    <div class="dropdown-content2">
-                        <div class="header">
-                            <h2>Voyages classés par auteur</h2>
+                <div class="dropdown-content2">
+                    <div class="header">
+                        <h2>Voyages classés par auteur</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                            <h3>Alexandre</h3>
+                            <a href="voyage1.html">Algérie</a>
+                            <a href="voyage2.html">Costa Brava</a>
+                            <a href="voyage3.html">Londres</a>
                         </div>
-
-                        <div class="row">
-                            <div class="column">
-                                <h3>Alexandre</h3>
-                                <a href="voyage1.html">Algérie</a>
-                                <a href="voyage2.html">Costa Brava</a>
-                                <a href="voyage3.html">Londres</a>
-                            </div>
-                            <div class="column">
-                                <h3>Ismaïl</h3>
-                                <a href="voyage4.html">Australie</a>
-                                <a href="voyage5.html">Japon</a>
-                                <a href="voyage6.html">Maroc</a>
-                            </div>
-                            <div class="column">
-                                <h3>Yonathan</h3>
-                                <a href="voyage7.html">Lettonie</a>
-                                <a href="voyage8.html">New York</a>
-                                <a href="voyage9.html">Nouvelle-Zélande</a>
-                            </div>
+                        <div class="column">
+                            <h3>Ismaïl</h3>
+                            <a href="voyage4.html">Australie</a>
+                            <a href="voyage5.html">Japon</a>
+                            <a href="voyage6.html">Maroc</a>
+                        </div>
+                        <div class="column">
+                            <h3>Yonathan</h3>
+                            <a href="voyage7.html">Lettonie</a>
+                            <a href="voyage8.html">New York</a>
+                            <a href="voyage9.html">Nouvelle-Zélande</a>
                         </div>
                     </div>
+                </div>
             </div>
-            </div>
-        </header> 
 
-        <div class="footer-container">
-            <div class="footer">
-                <div class="footer-heading footer-1">
-                    <h2>A propos de nous</h2>
-                    <a href="#">Alexandre</a>
-                    <a href="#">Ismaïl</a>
-                    <a href="#">Yonathan</a>
+            <a class="contacts" href="#contacts">Contacts</a>
+        </nav>
+
+        <main>
+            <aside>
+                <h2>Géographie</h2>
+                <img src="../images/geographie.jpg" alt="géographie algérie">                
+                <p>Constitué d’une multitude de reliefs, le Nord est sillonné d’est en ouest par une double barrière montagneuse de l’Atlas tellien et saharien, 
+                    les forêts et les parcs nationaux embellissent et égaillent les paysages. 
+                    Le climat varie de méditerranéen dans les villes du nord, semi-aride dans les hauts plateaux à saharien au sud.
+                <h3>Réserver un vol</h3>
+                <button class="button1"><a href="https://airalgerie.dz/planifier-votre-voyage/reservation/reservation-en-ligne/">Air Algérie</a></button>
+                <button class="button2"><a href="https://wwws.airfrance.fr/">Air France</a></button>
+            </aside>
+
+            <article>
+                <div class="intro">
+                        <div class="container">
+                            <img src="../images/algerie2.jpg" alt="littoral" style="width:100%;">
+                            <div class="content">
+                                <h1>Algérie</h1>
+                                <p>Un joyaux du littoral Mediterranéen</p>
+                            </div>
+                        </div>
+                      <p>Pays d’Afrique du Nord, l'Algérie est un grand pays dont la richesse foisonne tant par la culture de sa population hospitalière et chaleureuse, 
+                      que par la richesse de son patrimoine historique exprimée à travers les innombrables styles architecturaux aux quatre coins du pays.</p>
+                      <p>L’Algérie bénéficie d'atouts naturels importants qui ont de tout temps attiré les convoitises. 
+                      La culture algérienne est riche, variée et très ancienne, chaque région, chaque ville ou oasis constitue un espace culturel particulier à découvrir.</p>    
                 </div>
-                <div class="footer-heading footer-2">
-                    <h2>Nous contacter</h2>
-                    <a href="#">Alexandre</a>
-                    <a href="#">Ismaïl</a>
-                    <a href="#">Yonathan</a>
+
+                <div class="tableau">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3" align="center">Quelques villes</th>
+                            </tr>
+                        </thead>
+  
+                        <tbody>
+                            <tr>
+                                <td>ADRAR</td>
+                                <td>ALGER</td>
+                                <td>BEJAIA</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/adrar.jpg"</td>
+                                <td><img src="../images/alger.jpg"</td>
+                                <td><img src="../images/bejaia.jpg"</td>
+                            </tr>
+
+                            <tr>
+                                <td>CONSTANTINE</td>
+                                <td>TAMANRASET</td>
+                                <td>TIMIMOUN</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../images/constantine.jpg"</td>
+                                <td><img src="../images/tamenrasset.jpg"</td>
+                                <td><img src="../images/timimoun.jpg"</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
                 </div>
-                <div class="footer-heading footer-4">
-                    <h2>Réseaux Sociaux</h2>
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Youtube</a>
-                    <a href="#">Twitter</a>
-                </div>
-                <div class="footer-email-form">
-                    <h2>Inscrivez-vous à notre newsletter</h2>
-                    <input type="email" placeholder="Entrez votre adresse mail" id="footer-email">
-                    <input type="submit" value="Valider" id="footer-email-btn">
-                </div>
+                <p>Que vous soyez aimiez la montagne, le désert, la mer, ou plutôt les villes animées, vous trouverez forcément de quoi satisfaire votre curiosité dans ce grand pays!</p>
+            </article>
+        </main>
+
+        <footer>
+            <div class="footer-heading footer-1">
+                <h2>Les Voyages</h2>
+                <a href="#">Alexandre</a>
+                <a href="#">Ismaïl</a>
+                <a href="#">Yonathan</a>
             </div>
-        </div>
+            <div class="footer-heading footer-2">
+                <h2>Nous contacter</h2>
+                <a href="#">Alexandre</a>
+                <a href="#">Ismaïl</a>
+                <a href="#">Yonathan</a>
+            </div>
+            <div class="footer-heading footer-4">
+                <h2>Réseaux Sociaux</h2>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Youtube</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Inscrivez-vous à notre newsletter</h2>
+                <input type="email" placeholder="Entrez votre adresse mail" id="footer-email">
+                <input type="submit" value="Valider" id="footer-email-btn">
+            </div>
+        </footer>
     </body>
 </html>

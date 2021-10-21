@@ -1,0 +1,130 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;  
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+header {
+    padding: 50px;
+    text-align: center;
+    background-image: url(../images/biskra.jpg);
+    background-repeat: no-repeat;
+    color: green;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+header p {
+    font-size: 25px;
+}
+
+aside {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+article {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  .container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .container img {vertical-align: middle;}
+  
+  .container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+/* Tableau*/
+
+table {
+    width:100%;
+    border:1px  #C0C0C0;
+    padding:5px;
+}
+table th {
+    border:1px  #C0C0C0;
+    padding:5px;
+    background: green;
+    color: white;
+}
+table td {
+    border:1px  #C0C0C0;
+    padding:5px;
+}
+
+td {
+    text-align: center;
+}
+
+
+/* bouton air algérie */
+
+.button1 {
+    width: 100px; 
+    height: 40px;
+    border-radius: 4px;
+    background-color: #f9423d;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    }
+
+.button1:hover {
+    cursor: pointer;
+    background-color: #337af1;
+    transition: all 0.4s ease-out;
+    }
+
+.button1 a {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    }
+
+/* Bouton Air France */
+.button2 {
+    width: 100px; 
+    height: 40px;
+    border-radius: 4px;
+    background-color: blue;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+  }
+
+.button2:hover {
+    cursor: pointer;
+    background-color: red;
+    transition: all 0.4s ease-out;
+  }
+
+.button2 a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0.5rem;
+  }
+
+td img:hover {
+    border-image-outset: 2%;
+}
