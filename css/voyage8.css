@@ -47,7 +47,6 @@ text {
   padding-left: 25px;
   padding-right: 25px;
   margin-top: 0;
-  background: #0041ff;
   max-width: 100%;
 }
 .classement h1{
@@ -63,9 +62,11 @@ text {
   /* box-shadow: 5px 5px 20px rgba(0,0,0,0.2); */
   border-radius: 10px;
   /* border-radius: 63px; */
-  background: #0041ff;
-  box-shadow:  29px 29px 34px #002cad,
-             -29px -29px 34px #0056ff;
+  border-radius: 50px;
+background: #0041ff;
+box-shadow:  20px 20px 35px #002db0,
+             -20px -20px 35px #0055ff;
+
 }
 .skill-bars .bar{
   margin: 20px 0;

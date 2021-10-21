@@ -1,8 +1,12 @@
 .bigone{
   max-width: 100vw;
   height: 100vh;
-  font-family: 'Playfair Display', 'Georgia', serif;
+
+
 }
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@800&display=swap');
+
 video{
   left: 0;
   top: 0;
@@ -13,55 +17,48 @@ video{
   position: relative;
   margin-bottom: 0;
 }
-.nytext1 h1{
-  margin: 0;
-  padding: 0;
-}
-.nytext1 h2{
-  margin: 0;
-  padding: 0;
-}
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
-
-svg {
-  background: #ebe7e0 transparent;
-  position:absolute;
-  top: 0;
-  left: 0;
-  margin-bottom: 0;
- 
+.intro{
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-text {
-  fill: #35322a;
-  filter: url('#money');
-  font-family: 'Playfair Display', 'Georgia', serif;
-  font-size: 35px;
-  font-weight: 600;
+.titre{
   position: absolute;
-
-  
+  display: flex;
+  width: 99%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  text-shadow: 1px 0 10px rgb(179,35,57,1);
+  font-family: 'Biryani', sans-serif;
 }
+/* bar */
 .classement{
   padding-left: 25px;
-  background: #db0a2a;
-  width: 40%;
+  padding-right: 25px;
+  margin-top: 0;
+  max-width: 100%;
+  text-shadow: 1px 0 10px rgb(179,35,57,1);
 }
 .classement h1{
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 15px;
+  text-align: center;
 }
 /* Barre de skill de ny */
 .skill-bars{
-  padding: 25px 30px;
-  width: 100%%;
+  padding: 25px 2px;
+  width: 100%;
   /* background: #fff; */
   /* box-shadow: 5px 5px 20px rgba(0,0,0,0.2); */
   border-radius: 10px;
   /* border-radius: 63px; */
-  background: #db0a2a;
-  box-shadow:  29px 29px 34px #95071d,
-             -29px -29px 34px #ff0d37;
+  background: rgb(179,35,57);
+  background: linear-gradient(180deg, rgba(179,35,57,1) 0%, rgba(255,255,255,1) 34%, rgba(179,35,57,1) 100%);
+ 
 }
 .skill-bars .bar{
   margin: 20px 0;
@@ -86,7 +83,7 @@ text {
 .skill-bars .bar .progress-line{
   height: 10px;
   width: 100%;
-  background: #f0f0f0;
+  background: rgb(51, 50, 50);
   position: relative;
   transform: scaleX(0);
   transform-origin: left;
@@ -106,23 +103,20 @@ text {
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
-  background: #6665ee;
+  background: #ff0000;
   animation: animate 5s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 .bar .progress-line.nourriture span{
-  width: 45%;
+  width: 35%;
 }
 .bar .progress-line.musee span{
-  width: 100%;
-}
-.bar .progress-line.sorties span{
-  width: 85%;
+  width: 70%;
 }
 .bar .progress-line.amabalite span{
-  width: 50%;
+  width: 70%;
 }
 .bar .progress-line.attrait span{
-  width: 95%;
+  width: 85%;
 }
 .progress-line span::before{
   position: absolute;
@@ -158,32 +152,142 @@ text {
   }
 }
 .progress-line.nourriture span::after{
-  content: "45%";
+  content: "35%";
 }
 .progress-line.musee span::after{
-  content: "100%";
-}
-.progress-line.sorties span::after{
-  content: "85%";
+  content: "70%";
 }
 .progress-line.amabalite span::after{
-  content: "50%";
+  content: "70%";
 }
 .progress-line.attrait span::after{
-  content: "95%";
+  content: "85%";
 }
-.nyc2{
-  display: flex;
-  justify-content: space-evenly;
-  background: #db0a2a;
-}
-.description{
-  width: 70%;
-  padding-left: 25px;
-  padding-top: 15px;
-  border-radius: 63px;
-  font-weight: 600;
+.rig1{
+  background: rgb(179,35,57);
+  background: linear-gradient(180deg, rgba(179,35,57,1) 0%, rgba(255,255,255,1) 34%, rgba(179,35,57,1) 100%);
+  padding-top: 50px;
+  margin-bottom: 15px;
+  font-family: 'Carrois Gothic', sans-serif;
 
-  box-shadow: inset 19px 19px 37px #8c061b,
-            inset -19px -19px 37px #ff0e39;
+}
+th{
+  border: black double 1px;
+}
+td{
+  border: black double 1px;
+}
+.let1{
+  width: 100%;
+  height: 400px;
+  padding-left: 15%;
+  padding-right: 15%;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  text-shadow: 1px 0 10px rgb(179,35,57,1);  
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Carrois Gothic', sans-serif;
+  line-height: 1.5em;
+}
+thead{
+  box-shadow: #000 1px 0 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+tbody{
+  box-shadow: #000 1px 0 10px;
+}
+tfoot{
+  box-shadow: #000 1px 0 10px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.let2{
+  display: flex;
+  width: 100%;
+  font-family: 'Carrois Gothic', sans-serif;
+}
+
+.flechebox{
+  width: 50%;
+  position: relative;
+}
+.fleche{
+  position:absolute;
+  width: 5%;
+  height: auto;
+  left: 48%;
+  margin-top: 40%;
+  opacity: 0;
+}
+#mapImg:hover ~.fleche{
+  opacity: 1;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.map{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.art{
+  position: absolute;
+  left: 35%;
+  font-size: 25px;
+  font-family: 'Carrois Gothic', sans-serif;
+}
+/* Espace à droite de la map */
+.text{
+  width: 50%;
+  padding-left: 15px;
+  line-height: 1.5em;
+  font-family: 'Carrois Gothic', sans-serif;
+}
+.text h1{
+  margin-top: 0;
+}
+.imgrig{
+  width: 15%;
+  height: 15%;
+  border: 0;
+  margin: 0;
+  border-radius: 15px;
+  transition: all ease-in-out;
+}
+.imgrig:hover{
+  width: 75%;
+  height: 75%;
+}
+.vidgrig{
+  width: 25%;
+  height: 25%;
+  border-radius: 15px;
+  transition: all 330ms ease-in-out;
+}
+.vidgrig:hover{
+  width: 100%;
+  height: 300px;
+}
+.image{
+  position :absolute;
+  width: 49%;
+  bottom: -215%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image p{
+  margin-bottom: 0;
+  font-weight: 600; 
+  font-size: 15px; 
+  background-color: rgb(222,158,168,0.6);
+  width: 50%;
+  text-align: center;
+  font-family: 'Carrois Gothic', sans-serif;
 }
