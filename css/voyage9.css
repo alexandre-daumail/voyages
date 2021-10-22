@@ -22,9 +22,6 @@
   font-size: 35px;
   opacity: 0;
 }
-.titrenz h1{
-  left: 0;
-}
 @keyframes tirenz {
   0% {
     animation-timing-function: ease-in;
