@@ -1,8 +1,61 @@
-.bigone{
-  max-width: 100vw;
-  height: 100vh;
-  font-family: 'Playfair Display', 'Georgia', serif;
-  font-size: 20px;
+*{
+  margin: 0;
+  padding: 0;
+}
+/* header */
+header {
+  background-color: rgba(49, 20, 216, 0.2);
+  width: 100%;
+  height: 80px;
+  padding-top: 160px;
+  position: absolute;
+  text-shadow: #ff0000 1px 1px 2px;
+
+}
+.headtitre{
+  height: 100%;
+  position: absolute;
+  left: 40%;
+  top: 0;
+  max-width: 100%;
+}
+.headtitre img{
+  width: 70%;
+  height: auto;
+}
+.boiteg ul{
+  list-style:none;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+}
+.boiteg ul li{
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  font-size: 30px;
+  position: relative;
+  z-index: 10;
+  border-radius: 25px;
+}
+.boiteg ul ul{
+  display: none;
+  
+}
+.boiteg ul ul li{
+  background-color: rgb(128, 128, 128, 0.1);
+}
+.boiteg ul li:hover > ul{
+  display: block;
+}
+.boiteg ul ul ul{
+  margin-left: 150px;
+  top: 0;
+  position: absolute;
+  background-color: transparent;
 }
 video{
   left: 0;
@@ -42,6 +95,11 @@ text {
   position: absolute;
 
   
+}
+/* main */
+body{
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 20px;
 }
 .classement{
   padding-left: 25px;
@@ -528,6 +586,45 @@ box-shadow:  20px 20px 35px #002db0,
 }
 #slide11{
   background-size: cover;
+}
+/* FOOTER */
+footer{
+  width: 100%;
+  height: auto;
+  font-size: 35px;
+  background: #0041ff;
+  margin-top: 0;
+  padding-top: 150px;
+  z-index: 50;
+
+}
+.footerbox{
+  display: flex;
+  justify-content:space-evenly;
+  padding-bottom: 50px;
+  line-height: 1.7em;
+}
+.footerbox ul{
+  list-style-image: url(../images/voyage-romantique.png);
+}
+.footerbox ul a{
+  text-decoration: none;
+  color: black;
+}
+.footerbox ul a:hover{
+  background: red;
+  transition: 0.7s;
+  border-radius: 10px;
+}
+.button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.button img{
+  width: 70%;
+  height: auto;
 }
 
 
