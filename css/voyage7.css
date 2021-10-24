@@ -274,13 +274,13 @@ img{
 }
 .image{
   position :absolute;
-  width: 49%;
-  bottom: -246%;
+  width: 100%;
   background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgb(179,35,57);
 }
 .image p{
   margin-bottom: 0;
