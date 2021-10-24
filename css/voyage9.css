@@ -359,7 +359,7 @@ footer{
   color: black;
 }
 .footerbox ul a:hover{
-  background: rgba(165, 42, 42, 0.692);
+  background: brown;
   transition: 0.7s;
   border-radius: 10px;
 }
