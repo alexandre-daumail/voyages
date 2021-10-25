@@ -22,8 +22,8 @@
 header {
   background-color: rgba(49, 20, 216, 0.2);
   width: 100%;
-  height: 80px;
-  padding-top: 160px;
+  height: 60px;
+  padding-top: 130px;
   position: absolute;
   text-shadow: #ff0000 1px 1px 2px;
 
@@ -31,8 +31,8 @@ header {
 .headtitre{
   height: 100%;
   position: absolute;
-  left: 40%;
-  top: 0;
+  left: 34%;
+  top: -50px;
   max-width: 100%;
 }
 .headtitre img{
@@ -48,7 +48,7 @@ header {
   
 }
 .boiteg ul li{
-  width: 300px;
+  width: 230px;
   height: 50px;
   line-height: 50px;
   text-align: left;
@@ -68,7 +68,7 @@ header {
   display: block;
 }
 .boiteg ul ul ul{
-  margin-left: 150px;
+  margin-left: 190px;
   top: 0;
   position: absolute;
   background-color: transparent;
@@ -78,7 +78,7 @@ header {
   animation: titrenz 4s ease 1s 1 normal forwards;
   font-size: 35px;
   opacity: 0;
-  padding-top: 50px;
+  padding-top: 30px;
   font-size: 40px;
 }
 @keyframes titrenz {
@@ -157,9 +157,9 @@ header {
 
   .loader__innerring {
     position: absolute;
-    width: 18%;
-    top: 250px;
-    left: 41%;
+    width: 26%;
+    top: 290px;
+    left: 37%;
     animation: pivote 3s linear infinite;
     z-index: auto;
     border-radius: 50%;
@@ -192,7 +192,7 @@ header {
 }
 #sec3{
     display: flex;
-
+    width: 100%;
     background: #37a223;
     padding-top: 400px;
     justify-content: space-evenly;
@@ -205,11 +205,18 @@ header {
     height: auto;
     position: relative;
 }
-
+.agauche img{
+  width: 100%;
+  height: auto;
+}
 .adroite{
     width: 30%;
     height: auto;
     position: relative;
+}
+.adroite img{
+  width: 100%;
+  height: auto;
 }
 .aumilieu{
     width: 30%;
@@ -245,12 +252,12 @@ header {
 }
 @keyframes translate{
     from{
-      top: 234%;
-      left: 21%;
+      top: 425%;
+      left: 23%;
     }
     to{
-      top: 224%;
-      left: 73%;
+      top: 415%;
+      left: 76%;
     }
 }
 @keyframes rotate{
