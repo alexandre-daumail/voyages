@@ -1,0 +1,243 @@
+body{
+margin:0px;
+padding: 0px;
+background-color: #FFFFFF;
+}
+
+/* HEADER */
+/* MAIN */
+main{
+    font-family: 'Merriweather', serif;
+}
+.imgcust
+{
+ width: 100%;
+ height: 500px ;
+ background-image: url(../image/marocpres.jpg);
+ background-size: cover;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
+
+}
+.imgcust2{
+display: flex;
+justify-content: center;
+margin-top: 19%;
+}
+.imgcust3{
+    display: flex;
+    justify-content: center;
+
+}
+
+.barcher{
+    width: 20%;
+    height: 70%;
+    background-color: brown;
+    margin: 1%;
+}
+.searchspace{
+    border: none;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.barcher2{
+    width: 15%;
+    height: 70%;
+    background: brown;
+display: flex;
+justify-content: center;
+align-items: center;
+color: whitesmoke;
+font-weight: bold;
+margin-top: 1%;
+}
+.barcher2:hover{
+   background-color: blanchedalmond;
+   color: black;
+}
+
+/*À ne pas manquer */
+.text{
+display: flex;
+justify-content: center;
+color: black;
+font-size: 100%;
+}
+h1{
+    font-style: italic;
+    margin: 1%;
+    font-weight: lighter;
+}
+h3{
+    margin: 0px;
+    color: whitesmoke;
+    font-style:italic; 
+    font-family: 'Ubuntu', sans-serif;
+}
+.activcontent{
+
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.activcard{
+    background-image: url(../image/maroc2.jpeg);
+    width: 30% auto;
+    height: 225px;
+    margin: 3px;
+    background-size: cover;
+    border: 2px solid rgba(255, 0, 0, 0.479);
+
+}
+.activcard2{
+    background-image: url(../image/maroc3.jpeg);
+    width: 30% auto;
+    height: 225px;
+    margin: 3px;
+    background-size: cover;
+    border: 2px solid rgba(255, 0, 0, 0.438);
+}.activcard3{
+    background-image: url(../image/maroc4.jpeg);
+    width: 30% auto;
+    height: 225px;
+    margin: 3px;
+    background-size: cover;
+    border: 2px solid rgba(255, 0, 0, 0.466);
+
+}
+.activcard4{
+    background-image: url(../image/maroc5.jpeg);
+    width: 30% auto;
+    height: 225px;
+    margin: 3px;
+    background-size: cover;
+    border: 2px solid rgba(255, 0, 0, 0.432);
+}
+.activcard5{
+    width: 33% auto;
+    height: 500px;
+    margin: 5px;
+  background-image: url(../image/maroc1.jpeg) ;
+  margin: 3px;
+  background-size: cover;
+  border: 2px solid rgba(255, 0, 0, 0.418);
+}
+.cardcust{
+    width: 90px;
+    height: 40px;
+    background-color: rgba(0, 128, 0, 0.603);
+    margin: 10% 0% 0% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardcust2{
+    width: 120px;
+    height: 40px;
+    background-color: rgba(0, 128, 0, 0.603);
+    margin: 10% 0% 0% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+   
+    .cardcust3{
+        width: 130px;
+        height: 40px;
+        background-color: rgba(0, 128, 0, 0.603);
+        margin: 10% 0% 0% 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Vidéothèque */
+
+    .vidcontent{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    }
+    .cardvid{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .cardvid2{
+        width: 80%;
+       
+        margin: 10px;
+    }
+.vidcust{
+
+    border: 2px solid green;
+    margin: 0px 0px 0px 15px;
+}
+/* Formulaire */
+    form {
+        margin: 1% auto;
+        width: 400px;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+        background-color: #7a7a7a56;
+      }
+      form div + div {
+        margin-top: 1em;
+      }
+       label {
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+      }
+       input, textarea {
+        font: 1em sans-serif;
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+      }
+      input:focus, textarea:focus {
+        border-color: #000;
+      }
+      textarea {
+        vertical-align: top;
+        height: 5em;
+      }
+      .button { 
+        padding-left: 90px;
+      }
+      button {
+        margin-left: .5em;
+    
+        background: rgb(255, 0, 0);
+        
+        color: white;
+        
+        border-style: outset;
+        
+        border-color: #007e60;
+        
+        height: 50px;
+        
+        width: 100px;
+        
+        font-family: 'Merriweather', serif;
+        
+        text-shadow:none;
+        border-radius: 10%;
+      }
+    .colortext{
+        font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 35px; color: #E8E8E8;
+      }
+}

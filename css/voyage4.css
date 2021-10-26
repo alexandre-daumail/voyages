@@ -1,15 +1,42 @@
 body{
-  background-color: bisque;
+  background-color: white;
  background-size: cover;
  position: sticky;
 height: 100vh auto;
 width: 100vw auto;
 padding: 0;
 margin: 0;
- 
+font-family:"Lato"
+
+}
+.h1cust{ font-family: 'Oswald', sans-serif;
+color: #C60000; 
+text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke, -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+margin: 60px 0px 0px 0px;
+font-size: 40px;
+}
+.h1cust2{
+  color: #C60000; 
+  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke, -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+}
+.h1cust3{
+  color: #C60000; 
+  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke, -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+  font-size: 28px;
+  margin: 0px;
+}
+.japtext{
+  margin: 0px 0px 0px 40px;
+  text-align: center;
+}
+.japtext2{
+  font-weight: bold;
 }
 /* HEADER */
 /* MAIN */
+
 /* Mosaique d'images */
 
 .contener{
@@ -19,7 +46,7 @@ flex-direction: column;
 justify-content: space-evenly;
 height: 500px;
 width: 100%;
-background-color: bisque;
+background-color: whitesmoke;
 align-items: center;
 }
 .card{
@@ -129,15 +156,33 @@ align-items: center;
 .flex{
   display: flex;
   justify-content: space-evenly;
+  background-image: url(../image/fondjap1.jpg);
+  background-size: cover; 
 }
 .flex2{
 width: 50%;
-background-color: aqua;
+margin-top: 60px;
 text-align: center;
+}
+.flex3{
+  width: 100%;
+  height: 0 auto;
+  background-image: url(../image/fondjap2.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex4{
+  width: 100%;
+  background-image: url(../image/fondjap1.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* Carte du Japon */
 .positioncarte{
   position: relative;
+  
 }
 .tooltip {
   position: relative;
@@ -251,7 +296,7 @@ font-size: 30px;
 }
 /* Villes à visiter ! */
 .sectville{
-  background-color: red;
+ 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -262,17 +307,15 @@ font-size: 30px;
 .cardville{
   width: 60%;
   height: 160px;
-  background-color: blue;
   text-align: center;
-  margin: 40px auto;
+  margin: 25px auto;
 }
 .cardville2{
   width: 25%;
   height: 42%;
-  background-color: rgb(0, 255, 106);
   display: flex;
   justify-content: center;
-  margin: 20px auto;
+  margin: 5px auto;
 }
 .imgville{
   border-radius: 50%;
@@ -281,30 +324,55 @@ font-size: 30px;
 }
 /* les articles */
 .contenerart{
-  background-color: rgb(77, 64, 64);
   width: 100%;
-  height: 400px;
   display: flex;
   justify-content: center;
  flex-wrap: wrap;
  text-align: center;
 }
 .cardart{
-  width: 40%;
-  height: 350px;
-  background-color: blue;
+  width: 50%;
   margin: 20px;
   
 }
 .contenerart2{
   width: 40%;
-  height: 400px;
-  background-color: aquamarine;
-  
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
 }
 .cardart2{
-height: auto;
-  width: 30%;
-  background-color: rgb(0, 255, 85);
-  margin: 20px;
+display: flex;
+margin: 20px;
+width: 100%;
+}
+.cardart3{
+text-align: left;
+margin-left: 20px;
+}
+.textcol{
+color: #C60000;
+}
+/* Bouton */
+.japbutton{
+  border: 1px solid #C60000;
+  margin: 0px;
+  margin-left: .5em;
+  background: #FFE5E6;
+    border-style: outset;
+    height: 50px;
+    width: 150px;
+    font:"lato";
+    text-shadow:none;
+    font-weight:bold ;
+    color: #C60000;
+    margin: 0px 0px 20px 0px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.japbutton:hover{
+ color: whitesmoke;
+ background-color: #C60000;
 }

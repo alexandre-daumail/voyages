@@ -5,14 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/voyage4.css">
+    <link rel="stylesheet" href="../css/voyages.css">
+    <link rel="stylesheet" href="../css/voyage4.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <title>Japon</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <Header>
-
+        <div class="headtitre">
+            <img src="../voyages/images/logobleue.png" alt="">
+          </div>
+          </div>
+               <nav>
+                  <div class="boiteg">
+                    <ul>
+                      <li><a class="home" href="../voyages/index.html">Voyages</a></li>
+                      <li>Continents
+                        <ul>
+                          <li>Europe
+                            <ul>
+                              <li><a href="../voyages/voyages/voyage3.html">Londres</a></li>
+                              <li> <a href="../voyages/voyages/voyage2.html">Costa Brava</a></li>
+                              <li> <a href="../voyages/voyages/voyage7.html">Lettonie</a></li>
+                            </ul>
+                          </li>
+                          <li>Asie
+                            <ul>
+                              <li><a href="../voyages/voyages/voyage5.html">Japon</a></li>
+                            </ul>
+                          </li>
+                          <li>Afrique
+                            <ul>
+                              <li><a href="../voyages/voyages/voyage1.html">Algérie</a></li>
+                            <li><a href="../voyages/voyages/voyage6.html">Maroc</a></li>
+                            </ul>                          
+                          </li>
+                          <li>Amérique
+                            <ul>
+                              <li><a href="../voyages/voyages/voyage8.html">New York</a></li>
+                            </ul>
+                          </li>
+                          <li>Océanie
+                            <ul>
+                              <li><a href="../voyages/voyages/voyage9.html">Nouvelle-Zélande</a></li>
+                              <li><a href="../voyages/voyages/voyage4.html">Australie</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>Auteurs
+                        <ul>
+                          <li>Alexandre
+                            <ul>
+                              <li> <a href="../voyages/voyages/voyage1.html">Algérie</a></li>
+                              <li><a href="../voyages/voyages/voyage2.html">Costa Brava</a></li>
+                              <li><a href="../voyages/voyages/voyage3.html">Londres</a></li>
+                            </ul>
+                          </li>
+                          <li>Ismaïl
+                            <ul>
+                              <li><a href="../voyages/voyages/voyage4.html">Australie</a></li>
+                              <li><a href="../voyages/voyages/voyage5.html">Japon</a></li>
+                              <li><a href="../voyages/voyages/voyage6.html">Maroc</a></li>
+                            </ul>
+                          </li>
+                          <li>Yonathan
+                            <ul>
+                              <li><a href="../voyages/voyages/voyage7.html">Lettonie</a></li>
+                              <li> <a href="../voyages/voyages/voyage8.html">New York</a></li>
+                              <li> <a href="../voyages/voyages/voyage9.html">Nouvelle-Zélande</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>Contacts
+                        <ul>
+                          <li>Mail
+                            <ul>
+                              <li><a href="mailto:alexandre.daumail@laplateforme.io">Alexandre</a></li>
+                              <li><a href="mailto:ismail.bouasria@laplateforme.io">Ismail</a></li>
+                              <li><a href="mailto:yonathan.darmon@laplateforme.io">Yonathan</a></li>
+                            </ul>
+                          </li>
+                          <li>GitHub
+                            <ul>
+                              <li><a href="https://github.com/alexandre-daumail/voyages">AlexGit</a></li>
+                              <li><a href="https://github.com/ismail-bouasria">IsmaGit</a></li>
+                              <li><a href="https://github.com/yonathan-darmon">YoniGit</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+            </nav>
     </Header>
     <!-- MAIN -->
     <Main class="mainflex">
@@ -40,9 +130,9 @@
 
         <!-- Texte de bienvenue -->
         <section class="flex">
-            <article class="flex2">
-                <h1>Bienvenue au Japon!</h1>
-                <p> Cette page est un portail consacré au Japon et à ses îles.
+            <article class="flex2 japtext">
+                <h1 class="h1cust2">- Bienvenue au Japon ! -</h1>
+                <p class="japtext2"> Cette page est un portail consacré au Japon et à ses îles.
 
                     Et si je vous emmenais avec moi à la decouverte du Japon ? Laissez-moi vous guider à travers ses
                     magnifiques îles.
@@ -57,7 +147,7 @@
 
             <section class="flex2 positioncarte">
 
-                <img class="positioncarte" src="image/cartejap.png" width="300" height="338" border="0" usemap="#map" />
+                <img class="positioncarte" src="../images/cartejap.png" width="300" height="338" border="0" usemap="#map" />
 
                 <map name="map">
                     <area class="areahokkaido" shape="poly"
@@ -112,87 +202,191 @@
             </section>
         </section>
         <!-- Présentation des villes -->
-        <!-- Tokyo -->
-        <h1>Les villes à visiter !</h1>
-        <section class="sectville">
-            
-            <section class="cardville">
-                <h1>TOKYO</h1>
-                <p>Que vous vouliez en savoir plus sur la culture du bain à Tokyo ou bien trouver où aller pour manger,
-                    boire ou profiter de l’art et des vues sur la ville,
-                    ces guides et ces récits couvrent un large éventail de sujets. Vous trouverez ici les réponses à vos
-                    questions les plus brûlantes.</p>
-            </section>
-            <section class="cardville2"> <img class="imgville" src="image/tokyo.jpg" alt=""></section>
 
-        </section>
-        <!-- Osaka -->
-        <section class="sectville">
-            <section class="cardville2"> <img class="imgville" src="image/osaka.jpg" alt="">
+        <section class="flex3">
 
-            </section>
-            <section class="cardville"></section>
+            <h1 class="h1cust"> - Les villes à visiter ! -</h1>
 
-        </section>
-        <!-- Kyoto -->
-        <section class="sectville">
-            <section class="cardville">
+            <section class="sectville">
+                <!-- Tokyo -->
+                <section class="cardville">
+                    <h1 class="h1cust3"> TOKYO</h1>
+                    <p class="japtext2">Que vous vouliez en savoir plus sur la culture du bain à Tokyo ou bien trouver
+                        où aller pour
+                        manger,
+                        boire ou profiter de l’art et des vues sur la ville,
+                        ces guides et ces récits couvrent un large éventail de sujets. Vous trouverez ici les réponses à
+                        vos
+                        questions.</p>
+                </section>
+                <section class="cardville2"> <img class="imgville" src="../image/tokyo.jpg" alt=""></section>
 
             </section>
-            <section class="cardville2"> <img class="imgville" src="image/kyoto.jpg" alt=""></section>
+            <!-- Osaka -->
+            <section class="sectville">
+                <section class="cardville2"> <img class="imgville" src="../image/osaka.jpg" alt="">
 
-        </section>
-        <!-- Nagoya -->
-        <section class="sectville">
-            <section class="cardville2">
-                <img class="imgville" src="image/nagoya.jpg" alt="">
-            </section>
-            <section class="cardville"></section>
-
-        </section>
-        <!-- Fukuoka -->
-        <section class="sectville">
-            <section class="cardville">
-
-            </section>
-            <section class="cardville2"> <img class="imgville" src="image/fukuoka.jpg" alt=""></section>
-
-        </section>
-        <!-- Sapporo -->
-        <section class="sectville">
-            <section class="cardville2">
-                <img class="imgville" src="image/sapporo.jpg" alt="">
-            </section>
-            <section class="cardville"></section>
-        </section>
-        <!-- Okinawa -->
-        <section class="sectville">
-            <section class="cardville">
+                </section>
+                <section class="cardville">
+                    <h1 class="h1cust3">OSAKA</h1>
+                    <p class="japtext2">Que vous vouliez en savoir plus sur la culture du bain à Osaka ou bien trouver
+                        où aller pour
+                        manger,
+                        boire ou profiter de l’art et des vues sur la ville,
+                        ces guides et ces récits couvrent un large éventail de sujets. Vous trouverez ici les réponses à
+                        vos
+                        questions.</p>
+                </section>
 
             </section>
-            <article class="cardville2"> <img src="image/okinawa.jpg" class="imgville" alt=""></article>
-            
+            <!-- Kyoto -->
+            <section class="sectville">
+                <section class="cardville">
+                    <h1 class="h1cust3">KYOTO</h1>
+                    <p class="japtext2">Que vous vouliez en savoir plus sur la culture du bain à Kyoto ou bien trouver
+                        où aller pour
+                        manger,
+                        boire ou profiter de l’art et des vues sur la ville,
+                        ces guides et ces récits couvrent un large éventail de sujets. Vous trouverez ici les réponses à
+                        vos
+                        questions.</p>
+                </section>
+                <section class="cardville2"> <img class="imgville" src="../image/kyoto.jpg" alt=""></section>
+
+            </section>
+            <!-- Nagoya -->
+            <section class="sectville">
+                <section class="cardville2">
+                    <img class="imgville" src="../image/nagoya.jpg" alt="">
+                </section>
+                <section class="cardville">
+                    <h1 class="h1cust3">NAGOYA</h1>
+                    <p class="japtext2">Que vous vouliez en savoir plus sur la culture du bain à Nagoya ou bien trouver
+                        où aller pour
+                        manger,
+                        boire ou profiter de l’art et des vues sur la ville,
+                        ces guides et ces récits couvrent un large éventail de sujets. Vous trouverez ici les réponses à
+                        vos
+                        questions.</p>
+                </section>
+
+            </section>
+            <!-- Fukuoka -->
+            <section class="sectville">
+                <section class="cardville">
+                    <h1 class="h1cust3">FUKUOKA</h1>
+                    <p class="japtext2">Que vous vouliez en savoir plus sur la culture du bain à Fukuoka ou bien trouver
+                        où aller pour
+                        manger,
+                        boire ou profiter de l’art et des vues sur la ville,
+                        ces guides et ces récits couvrent un large éventail de sujets. Vous trouverez ici les réponses à
+                        vos
+                        questions.</p>
+                </section>
+                <section class="cardville2"> <img class="imgville" src="../image/fukuoka.jpg" alt=""></section>
+
+            </section>
+            <!-- Sapporo -->
+            <section class="sectville">
+                <section class="cardville2">
+                    <img class="imgville" src="../image/sapporo.jpg" alt="">
+                </section>
+                <section class="cardville">
+                    <h1 class="h1cust3">SAPPORO</h1>
+                    <p class="japtext2">Que vous vouliez en savoir plus sur la culture du bain à Sapporo ou bien trouver
+                        où aller pour
+                        manger,
+                        boire ou profiter de l’art et des vues sur la ville,
+                        ces guides et ces récits couvrent un large éventail de sujets. Vous trouverez ici les réponses à
+                        vos
+                        questions.</p>
+                </section>
+            </section>
+            <!-- Okinawa -->
+            <section class="sectville">
+                <section class="cardville">
+                    <h1 class="h1cust3">OKINAWA</h1>
+                    <p class="japtext2">Que vous vouliez en savoir plus sur la culture du bain à Okinawa ou bien trouver
+                        où aller pour
+                        manger,
+                        boire ou profiter de l’art et des vues sur la ville,
+                        ces guides et ces récits couvrent un large éventail de sujets. Vous trouverez ici les réponses à
+                        vos
+                        questions.</p>
+                </section>
+                <article class="cardville2"> <img src="../image/okinawa.jpg" class="imgville" alt=""></article>
+
+            </section>
         </section>
         <!-- les Articles -->
-        <h1>Dernier articles</h1>
-        <section class="contenerart">
-            
-            <article class="cardart">
-                
-                <img src="image/japarticle1.jpg"  width="100%" alt="">
-            </article> 
-            <section class="contenerart2">
-                <article class="cardart2"> <img src="image/japarticle2.jpg" width="100%" alt=""></article>
-                <article class="cardart2"> <img src="image/japarticle3.jpg" width="100%" alt=""></article>
-                <article class="cardart2"> <img src="image/japarticle4.jpg" width="100%" alt=""></article>
-            </section>
-           
-        </section>
-    </Main>
-    <!-- FOOTER -->
-    <footer>
+        <section class="flex4">
+            <h1 class="h1cust">- Derniers articles -</h1>
+            <section class="contenerart">
 
-    </footer>
-</body>
+                <article class="cardart">
+
+                    <img src="../image/japarticle1.jpg" width="100%" alt="">
+                    <p class="textcol"> 15 OCTOBRE 2021</p>
+                    <hr>
+                    <h2>RENCONTRE AVEC LES HIME DARUMA</h2>
+                    <p class="textcol"> Lire article</p>
+                </article>
+                <section class="contenerart2">
+                    <section class="cardart2">
+                        <img src="../image/japarticle2.jpg" width="30%" alt="">
+                        <div class="cardart3">
+                            <h3>Akanekosha, le sanctuaire du chat rouge</h3>
+                            <p class="textcol"> 27 Octobre 2021</p>
+                            <p class="textcol">Lire article</p>
+                        </div>
+                    </section>
+                    <article class="cardart2">
+                        <img src="../image/japarticle3.jpg" width="30%" alt="">
+                        <div class="cardart3">
+                            <h3>«The beginning of Kawaii», visite de l'expo pour les 60 ans de Sanrio</h3>
+                            <p class="textcol"> 14 Octobre 2021</p>
+                            <p class="textcol">Lire article</p>
+                        </div>
+                    </article>
+                    <article class="cardart2">
+                        <img src="image/japarticle4.jpg" width="30%" alt="">
+                        <div class="cardart3">
+                            <h3>Daikôzen-ji, le Temple des azalées de Kiyama</h3>
+                            <p class="textcol"> 8 Octobre 2021</p>
+                            <p class="textcol">Lire article</p>
+                        </div>
+                    </article>
+                </section>
+            </section>
+            <!-- Bouton -->
+            <a href="http://www.benefukuoka.com/blog/"class="japbutton"> Parcourir le blog</a>
+        </section>
+        <!-- FOOTER -->
+       <footer>
+        <div class="footerbox">
+            <ul>Les Voyages
+              <li><a href="../voyages/voyage1.html">Alexandre</a></li>
+              <li><a href="../voyages/voyage4.html">Ismail</a></li>
+              <li><a href="../voyages/voyage7.html">Yonathan</a></li>
+            </ul>
+            <ul>Nous contacter
+              <li><a href="#">Alexandre</a></li>
+              <li><a href="#">Ismaïl</a></li>
+              <li><a href="#">Yonathan</a></li>
+            </ul>
+            <ul>Réseaux Sociaux
+              <li> <a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Youtube</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+            <div class="button">
+            <h3>Inscrivez-vous à notre newsletter</h3>
+              <input type="email" placeholder="Entrez votre adresse mail" id="footer-email">
+              <input type="submit" value="Valider" id="footer-email-btn">
+              <img src="../voyages/images/logo gris.png">
+            </div>
+       </footer>
+    </Main>
 
 </html>
