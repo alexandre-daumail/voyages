@@ -4,24 +4,24 @@
 }
 /* header */
 header {
-  background-color: rgba(49, 20, 216, 0.2);
-  width: 100%;
-  height: 60px;
-  padding-top: 160px;
-  position: absolute;
-  text-shadow: #ff0000 1px 1px 2px;
+  background-color: rgba(49, 20, 216, 0.2) !important;
+  width: 100%!important;
+  height: 60px!important;
+  padding-top: 160px!important;
+  position: absolute!important;
+  text-shadow: #ff0000 1px 1px 2px!important;
 
 }
 .headtitre{
-  height: 100%;
-  position: absolute;
-  left: 35%;
-  top: 0;
-  max-width: 100%;
+  height: 100%!important;
+  position: absolute!important;
+  left: 35%!important;
+  top: 0!important;
+  max-width: 100%!important;
 }
 .headtitre img{
-  width: 70%;
-  height: auto;
+  width: 70%!important;
+  height: auto!important;
 }
 .boiteg ul{
   list-style:none;
@@ -97,6 +97,9 @@ text {
   
 }
 /* main */
+main{
+  background-image: none !important;
+}
 body{
   font-family: 'Playfair Display', 'Georgia', serif;
   font-size: 20px;
@@ -589,43 +592,9 @@ box-shadow:  20px 20px 35px #002db0,
 }
 /* FOOTER */
 footer{
-  width: 100%;
-  height: auto;
-  font-size: 35px;
-  background: #0041ff;
-  margin-top: 0;
-  padding-top: 150px;
-  z-index: 50;
+  background: #0041ff!important;
+}
 
-}
-.footerbox{
-  display: flex;
-  justify-content:space-evenly;
-  padding-bottom: 50px;
-  line-height: 1.7em;
-}
-.footerbox ul{
-  list-style-image: url(../images/voyage-romantique.png);
-}
-.footerbox ul a{
-  text-decoration: none;
-  color: black;
-}
-.footerbox ul a:hover{
-  background: red;
-  transition: 0.7s;
-  border-radius: 10px;
-}
-.button{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center
-}
-.button img{
-  width: 70%;
-  height: auto;
-}
 
 
 
