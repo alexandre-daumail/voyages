@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+header {
+  padding: 50px;
+  text-align: center;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  color: white;
+}
+
+
+h1 {
+  font-size: 40px;
+}
+
+/* GALERIE D'IMAGES */
+:root {
+  --darkgray: #212329;
+  --lightgray: #b1b1b1;
+  --brightred: #F9423D;
+  --white: #fff;
+  --lightred: #f9433dcc;
+  --lightblue: #337af1;
+}
+
+.hexa {
+  background-color: var(--darkgray);
+  width: 100vw;
+  height: auto;
+  min-height: 10vh;
+  padding-bottom: 8rem;
+}
+
+.london-heading {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+}
+
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin:  0 auto;
+  transform: translateY(80px);
+  padding: 0;
+  background-color: var(--darkgray);
+  height: auto;
+}
+
+.pics-cell {
+  flex: 0 1 250px;
+  max-width: 250px;
+  height: 275px;
+  margin: 2px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.8);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  cursor: pointer;
+}
+
+.pics-cell_img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.pics-cell_text {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: opacity 350ms;
+  text-shadow: 2px 2px 2px var(--darkgray);
+}
+
+.pics-cell::before, .pics-cell::after, .pics-cell_img {
+  top: -50%;
+  width: 100%;
+  height: 200%;
+  display: block;
+  position: absolute;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: -1;
+}
+
+.pics-cell:hover {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+  z-index: 99;
+  overflow: hidden;
+}
+
+.pics-cell:before {
+  content: '';
+  position: absolute;
+  opacity: 0.4;
+  width: 350px;
+  height: 70px;
+  background:  var(--white);
+  top: 50;
+  left: 0;
+  z-index: 1;
+  transform: rotate(45deg);
+  transform: transform 1.5s;
+}
+
+.pics-cell:hover:before {
+  transform: translate(-100%, 600%) rotate(45deg);
+  transition: transform 0.5s;
+}
+/* Responsive */
+@media screen and (min-width: 550px) and (max-width: 825px) {
+  .pics-cell:nth-child(3n) {
+    margin-right: calc(50% - 125px);
+    margin-left: calc(50% - 125px)
+  }
+
+  .pics-cell:nth-child(3) {
+    top: -70px;
+  }
+
+  .pics-cell:nth-child(4) {
+    top: -140px;
+  }
+
+  .pics-cell:nth-child(5) {
+    top: -140px;
+  }
+
+  .pics-cell:nth-child(6) {
+    top: -210px;
+  }
+
+  .pics-cell:nth-child(7) {
+    top: -280px;
+    margin-right: 250px;
+  }
+}
+
+@media screen and (min-width:825px) and (max-width:1100px) {
+  .pics-cell:nth-child(4) {
+    top: -70px;
+    margin-left: calc(50% - 275px);
+  }
+
+  .pics-cell:nth-child(5) {
+    margin-right: calc(50% - 275px);
+    position: relative;
+    top: -70px;
+  }
+
+  .pics-cell:nth-child(6) {
+    margin-left: calc(50% - 530px);
+    top: -140px;
+  }
+
+  .pics-cell:nth-child(7) {
+    margin-right: calc(50% - 275px);
+    top: -140px;
+  }
+
+}
+
+@media (min-width: 1100px) {
+  .pics-cell:nth-child(n + 5) {
+    position: relative;
+    top: -70px;
+  }
+}
+
+@media  screen and (max-width: 550px)  {
+  .pics-cell {
+    margin: 50px 25px;
+  }
+}
+
+/* Contenu texte */
+
+.london {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #212329;
+  color: #fff;
+}
+
+.texte {
+   border: solid;
+   margin: 15px;
+   padding: 10px;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .texte h2 {
+   font-weight: bold;
+   line-height: 2em;
+ }
+
+ .texte p {
+   width: 95vh;
+   margin: 8px;
+ }
+
+ .texte img {
+  border-radius: 8px;
+  height: 25vh;
+  float: right;
+}

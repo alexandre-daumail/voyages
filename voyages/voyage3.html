@@ -4,117 +4,252 @@
         <meta charset='utf-8'>
         <title>Voyage 3 - Londres</title>
         <link rel = "icon" href = "../images/london.png" type = "image/x-icon">
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel='stylesheet' href='../css/voyages.css'>
         <link rel="stylesheet" href="../css/voyage3.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- création navbar -->
     </head>
     <body>
         <header>
-            <h1>Voyage 3</h1>
-            <p>Londres</p> 
-        </header> 
-
-        <nav>
-            <a class="home" href="../voyages.html">Voyages</a>
-            <div class="dropdown">
-                <button class="dropbtn">Continents
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <div class="header">
-                    <h2>Destinations classées par continent</h2>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <h3>Europe</h3>
-                            <a href="voyage3.html">Londres</a>
-                            <a href="voyage2.html">Costa Brava</a>
-                            <a href="voyage7.html">Lettonie</a>
-                        </div>
-                        <div class="column">
-                            <h3>Asie</h3>
-                            <a href="voyage5.html">Japon</a>
-                        </div>
-                        <div class="column">
-                            <h3>Afrique</h3>
-                            <a href="voyage1.html">Algérie</a>
-                            <a href="voyage6.html">Maroc</a>
-                        </div>
-                        <div class="column">
-                            <h3>Amérique</h3>
-                            <a href="voyage8.html">New York</a>
-                        </div>
-                        <div class="column">
-                            <h3>Océanie</h3>
-                            <a href="voyage9.html">Nouvelle-Zélande</a>
-                            <a href="voyage4.html">Australie</a>
-                        </div>
-                    </div>
+            <nav >
+              <img src="../images/logobleue.png" alt="">
+      
+              <div class="boiteg" style="background-color:#214B9F">
+                <ul>
+                  <li><a class="home" href="../index.html">Voyages</a></li>
+                  <li>Continents
+                    <ul>
+                      <li>Europe
+                        <ul>
+                          <li><a href="voyage3.html">Londres</a></li>
+                          <li> <a href="voyage2.html">Costa Brava</a></li>
+                          <li> <a href="voyage7.html">Lettonie</a></li>
+                        </ul>
+                      </li>
+                      <li>Asie
+                        <ul>
+                          <li><a href="voyage5.html">Japon</a></li>
+                        </ul>
+                      </li>
+                      <li>Afrique
+                        <ul>
+                          <li><a href="voyage1.html">Algérie</a></li>
+                        <li><a href="voyage6.html">Maroc</a></li>
+                        </ul>                          
+                      </li>
+                      <li>Amérique
+                        <ul>
+                          <li><a href="voyage8.html">New York</a></li>
+                        </ul>
+                      </li>
+                      <li>Océanie
+                        <ul>
+                          <li><a href="voyage9.html">Nouvelle-Zélande</a></li>
+                          <li><a href="voyage4.html">Australie</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Auteurs
+                    <ul>
+                      <li>Alexandre
+                        <ul>
+                          <li> <a href="voyage1.html">Algérie</a></li>
+                          <li><a href="voyage2.html">Costa Brava</a></li>
+                          <li><a href="voyage3.html">Londres</a></li>
+                        </ul>
+                      </li>
+                      <li>Ismaïl
+                        <ul>
+                          <li><a href="voyage4.html">Australie</a></li>
+                          <li><a href="voyage5.html">Japon</a></li>
+                          <li><a href="voyage6.html">Maroc</a></li>
+                        </ul>
+                      </li>
+                      <li>Yonathan
+                        <ul>
+                          <li><a href="voyage7.html">Lettonie</a></li>
+                          <li> <a href="voyage8.html">New York</a></li>
+                          <li> <a href="voyage9.html">Nouvelle-Zélande</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Contacts
+                    <ul>
+                      <li>Mail
+                        <ul>
+                          <li><a href="mailto:alexandre.daumail@laplateforme.io">Alexandre</a></li>
+                          <li><a href="mailto:ismail.bouasria@laplateforme.io">Ismail</a></li>
+                          <li><a href="mailto:yonathan.darmon@laplateforme.io">Yonathan</a></li>
+                        </ul>
+                      </li>
+                      <li>GitHub
+                        <ul>
+                          <li><a href="https://github.com/alexandre-daumail/voyages">AlexGit</a></li>
+                          <li><a href="https://github.com/ismail-bouasria">IsmaGit</a></li>
+                          <li><a href="https://github.com/yonathan-darmon">YoniGit</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header> 
+      
+        <main>
+        <!-- Gallerie d'images -->
+            <aside class="hexa">
+                <div class="london-heading">
+                    <h1>Quelques lieux iconiques</h1>
                 </div>
-            </div>
 
-            <div class="dropdown2">
-                <button class="dropbtn2">Auteurs
-                <i class="fa fa-caret-down"></i>
-                </button>
-
-                <div class="dropdown-content2">
-                    <div class="header">
-                        <h2>Voyages classés par auteur</h2>
+                <div class="pics">
+                    <div class="pics-cell">
+                        <img src="../images/londonb.jpg" alt="bridge" class="pics-cell_img">
+                        <a href="#bridge"><div class="pics-cell_text">Tower Bridge</div></a>
+                    </div>
+                    <div class="pics-cell">
+                        <img src="../images/london2.jpg" alt="" class="pics-cell_img">
+                        <a href="#picadilly"><div class="pics-cell_text">Picadilly Circus</div></a>
+                    </div>
+                    <div class="pics-cell">
+                        <img src="../images/london3.jpg" alt="" class="pics-cell_img">
+                        <a href="#museum"><div class="pics-cell_text">British Museum</div></a>
+                    </div>
+                    <div class="pics-cell">
+                        <img src="../images/london4.jpg" alt="" class="pics-cell_img">
+                        <a href="#camden"><div class="pics-cell_text">Camden Town</div></a>
+                    </div>
+                    <div class="pics-cell">
+                        <img src="../images/london5.jpg" alt="" class="pics-cell_img">
+                        <a href="#bigBen"><div class="pics-cell_text">Big Ben</div></a>
+                    </div>
+                    <div class="pics-cell">
+                        <img src="../images/london6.jpg" alt="" class="pics-cell_img">
+                        <a href="#city"><div class="pics-cell_text">London City </div></a>
+                    </div>
+                    <div class="pics-cell">
+                        <img src="../images/naturalmuseum.jpg" alt="" class="pics-cell_img">
+                        <a href="#natural"><div class="pics-cell_text">Natural History Museum</div></a>
                     </div>
 
-                    <div class="row">
-                        <div class="column">
-                            <h3>Alexandre</h3>
-                            <a href="voyage1.html">Algérie</a>
-                            <a href="voyage2.html">Costa Brava</a>
-                            <a href="voyage3.html">Londres</a>
-                        </div>
-                        <div class="column">
-                            <h3>Ismaïl</h3>
-                            <a href="voyage4.html">Australie</a>
-                            <a href="voyage5.html">Japon</a>
-                            <a href="voyage6.html">Maroc</a>
-                        </div>
-                        <div class="column">
-                            <h3>Yonathan</h3>
-                            <a href="voyage7.html">Lettonie</a>
-                            <a href="voyage8.html">New York</a>
-                            <a href="voyage9.html">Nouvelle-Zélande</a>
-                        </div>
-                    </div>
+                    
                 </div>
-            </div>
+            </aside>
 
-            <a class="contacts" href="#contacts">Contacts</a>
-        </nav>
+            <article class=london>
+                <section class="texte" id="intro">
+                    <h2>Une ville d'importance mondiale</h2>
+                    <p>Considérée comme l'une des villes les plus importantes du monde grâce à son histoire et sa place dans les marchés financiers, elle a aussi une place important dans mon coeur.</p>
+                    <p>J'y ai passé trois ans de mon enfance. Je me suis très vite attaché à cette ville sublime.</p>
+                    <p>Voici un bref aperçu de lieux emblématiques de Londres:</p>
+                    <img src="../images/london1.jpg" alt="">
+                </section>
+                
+                <section class= "texte" id="bridge">
+                    <h2>Tower Bridge</h2>
+                        <p>Reconnaissable entre mille, le Tower Bridge est le pont à bascule le plus célèbre du monde. 
+                        Il se trouve à l'est du vieux Londres sur la Tamise, le fleuve qui traverse la Capitale, à deux pas de la Tour de Londres. Cette dernière est un château médiéval dans lequel sont abrités les joyaux de la Couronne, sous la garde des Yeomen Warders. 
+                        Ils sont également chargés de la surveillance des prisonniers de la Tour.</p>
+                        <p>Le Tower Bridge a été construit fin du 19è siècle car il n'existait pas de pont pour relier les rives des quartiers Est de Londres. L'ensemble est constitué d'un pont routier et d'une passerelle piétonne reliant deux tours de style néogothique par un pont routier et une passerelle pour les piétons. 
+                        Un système ingénieux permet aux navires de grand gabarit de circuler sous le pont routier qui est à bascule. 
+                        il s'agit d'une machinerie à vapeur et d'accumulateurs d'énergie permettant d'actionner le mécanisme de levage du pont routier en une minute seulement.</p>
+                        <img src="../images/londonb.jpg" alt="">
+                    </section>
+
+                <section class= "texte" id="picadilly">
+                    <h2>Picadilly Circus</h2>
+                        <p>Célèbre place de Londres pour ses enseignes lumineuses, c'est un symbole de l'effervescence de la vie londonienne. L'éventail d'activités proches de cette place en font un 
+                        point d'intérêt immanquable! Multitude de magasins, cinémas, théâtres, et restaurants... Vous trouverez inévitablement de quoi occuper votre séjour dans le voisinage de ce lieu emblématique.
+                        </p>
+                        <img src="../images/london2.jpg" alt="">
+
+                </section>
+
+                <section class= "texte" id="museum">
+                    <h2>British Museum</h2>
+                        <p>Un de mes lieux préférés avec le Natural History Museum... La richesse de ses collections et la beauté des lieux nous emporte pour un voyage dans l'Histoire de l'Homme: 
+                        on y découvre à chaque détour un peu plus sur les origines de l'humanité. Situé au cœur de Londres, vous y trouverez plus de 7millions d'objets
+                        et de pièces de musée en provenance de partout dans le monde, répartis dans plus de 90 salles. </p>
+                        <img src="../images/london3.jpg" alt="">
+
+                </section>
+
+                <section class= "texte" id="camden">
+                    <h2>Camden Town</h2>
+                        <p>  Si vous aimez déambuler dans des rues à la découverte de curiosités, chiner dans un marché aux puces ou simplement 
+                         faire du lèche vitrines devant des boutiques de mode, Camden Town est faite pour vous. Il s'agit d'un quartier très apprécié des touristes. De nombreux cafés 
+                         et pubs s'y trouvent. Le soir venu, la fête bat son plein au Jazz Cafe, à Roundhouse, dans les discothèques alternatives et enseignes plus traditionnelles!
+                         C'est un lieu plein de vie et vous pouvez même vous rendre au domaine Regent's Park dans la foulée pour y admirer les jardins à l'anglaise et le zoo de Londres.</p>
+                         <img src="../images/camden.jpg" alt="">
+                </section>
+
+                <section class= "texte" id="bigBen">
+                    <h2>Big Ben</h2>
+                        <p>La Tour Elisabeth du palais de Westminster (siège du Parlement britannique), est  la tour horloge de cet édifice. 
+                        La grande cloche de 13,5 tonnes à son sommet est le célèbre Big Ben. Impossible de visiter l'intérieur de la tour, à moins d'habiter au Royaume-uni et 
+                        d'obtenir une autorisation. Pourquoi aller visiter Big Ben alors qu'on voit la tour de l'autre côté de la Tamise et qu'on entend sa cloche à 6km à la ronde? 
+                        Ne pas passer au pied de ce symbole de Londres est un peu comme aller à Paris sans passer par le Champ de Mars… De plus, le palais de Westminster est à deux pas
+                         de Buckingham Palace
+                         (résidence des souverains britanniques) et en plein centre-ville ouest, les activités ne manquent pas après la visite!</p>
+                         <img src="../images/london5.jpg" alt="">
+
+                </section>
+
+                <section class= "texte" id="city">
+                    <h2>London City</h2>
+                    <p>La City de Londres est un quartier financier historique qui abrite à la fois la Bourse 
+                        de Londres et la Banque d'Angleterre. Les gratte-ciel modernes des banques se dressent au-dessus des vestiges des ruelles médiévales. 
+                        Les employés huppés fréquentent les restaurants et bars chics du quartier. Les attractions touristiques incluent l'emblématique cathédrale Saint-Paul, 
+                        datant du XVIIe siècle, le Museum of London qui retrace l'histoire de la ville et l'immense centre culturel Barbican Centre pour ses spectacles.</p>
+                        <img src="../images/london6.jpg" alt="">
+                </section>
+
+                <section class= "texte" id="natural">
+                    <h2>Natural History Museum</h2>
+                    <p>Le Musée d'Histoire Naturelle de Londres (Natural History Museum) est consacré à la planète Terre et à l'évolution des 
+                        différentes formes de vie qu'elle a accueilli à travers le temps. 
+                        Plus de 70 millions de spécimens et d'objets en lien avec la nature y sont exposés.
+                        Dès votre arrivée, l'immense hall d'entrée ne pourra pas vous laisser indifférent. Vous y découvrirez une décoration soignée, où des animaux de très grande taille sont exposés - comme par
+                         exemple, les squelettes d'un énorme diplodocus et d'un mastodonte originaire du Chili, 
+                         pour ne citer que quelques-uns de ces impressionnants spécimens.</p>
+                         <img src="../images/naturalmuseum.jpg" alt="">
+                </section>
+            </article>
+        </main>
 
         <footer>
-            <div class="footer-heading footer-1">
-                <h2>Les Voyages</h2>
-                <a href="#">Alexandre</a>
-                <a href="#">Ismaïl</a>
-                <a href="#">Yonathan</a>
-            </div>
-            <div class="footer-heading footer-2">
-                <h2>Nous contacter</h2>
-                <a href="#">Alexandre</a>
-                <a href="#">Ismaïl</a>
-                <a href="#">Yonathan</a>
-            </div>
-            <div class="footer-heading footer-4">
-                <h2>Réseaux Sociaux</h2>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Youtube</a>
-                <a href="#">Twitter</a>
-            </div>
-            <div class="footer-email-form">
-                <h2>Inscrivez-vous à notre newsletter</h2>
-                <input type="email" placeholder="Entrez votre adresse mail" id="footer-email">
-                <input type="submit" value="Valider" id="footer-email-btn">
+            <div class="footerbox">
+                <ul>Les Voyages
+                  <li><a href="../voyages/voyage1.html">Alexandre</a></li>
+                  <li><a href="../voyages/voyage4.html">Ismail</a></li>
+                  <li><a href="../voyages/voyage7.html">Yonathan</a></li>
+                </ul>
+                <ul>Nous contacter
+                  <li><a href="#">Alexandre</a></li>
+                  <li><a href="#">Ismaïl</a></li>
+                  <li><a href="#">Yonathan</a></li>
+                </ul>
+                <ul>Réseaux Sociaux
+                  <li> <a href="#">Facebook</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Youtube</a></li>
+                  <li><a href="#">Twitter</a></li>
+                </ul>
+                <div class="button">
+                <h3>Inscrivez-vous à notre newsletter</h3>
+                  <input type="email" placeholder="Entrez votre adresse mail" id="footer-email">
+                  <input type="submit" value="Valider" id="footer-email-btn">
+                  <img src="../images/logo gris.png">
+                </div>
+                <div id="scroll_to_top">
+                  <a href="#top"><img src="../images/to_top.png" alt="Retourner en haut" /></a>
+                </div>    
+      
+                <div id="scroll_to_top">
+                    <a href="#top"><img src="../images/to_top.png" alt="Retourner en haut" /></a>
+                </div>
             </div>
         </footer>
     </body>
