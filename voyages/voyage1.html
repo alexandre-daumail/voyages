@@ -7,89 +7,12 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' href='../css/voyages.css'>
         <link rel="stylesheet" href="../css/voyage1.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- création navbar -->
     </head>
     <body>
         <header>
                 <h1>Voyage 1</h1>
                 <p>L'Algérie</p> 
         </header> 
-
-        <nav>
-            <a class="home" href="../voyages.html">Voyages</a>
-            <div class="dropdown">
-                <button class="dropbtn">Continents
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <div class="header">
-                    <h2>Destinations classées par continent</h2>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <h3>Europe</h3>
-                            <a href="voyage3.html">Londres</a>
-                            <a href="voyage2.html">Costa Brava</a>
-                            <a href="voyage7.html">Lettonie</a>
-                        </div>
-                        <div class="column">
-                            <h3>Asie</h3>
-                            <a href="voyage5.html">Japon</a>
-                        </div>
-                        <div class="column">
-                            <h3>Afrique</h3>
-                            <a href="voyage1.html">Algérie</a>
-                            <a href="voyage6.html">Maroc</a>
-                        </div>
-                        <div class="column">
-                            <h3>Amérique</h3>
-                            <a href="voyage8.html">New York</a>
-                        </div>
-                        <div class="column">
-                            <h3>Océanie</h3>
-                            <a href="voyage9.html">Nouvelle-Zélande</a>
-                            <a href="voyage4.html">Australie</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="dropdown2">
-                <button class="dropbtn2">Auteurs
-                <i class="fa fa-caret-down"></i>
-                </button>
-
-                <div class="dropdown-content2">
-                    <div class="header">
-                        <h2>Voyages classés par auteur</h2>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <h3>Alexandre</h3>
-                            <a href="voyage1.html">Algérie</a>
-                            <a href="voyage2.html">Costa Brava</a>
-                            <a href="voyage3.html">Londres</a>
-                        </div>
-                        <div class="column">
-                            <h3>Ismaïl</h3>
-                            <a href="voyage4.html">Australie</a>
-                            <a href="voyage5.html">Japon</a>
-                            <a href="voyage6.html">Maroc</a>
-                        </div>
-                        <div class="column">
-                            <h3>Yonathan</h3>
-                            <a href="voyage7.html">Lettonie</a>
-                            <a href="voyage8.html">New York</a>
-                            <a href="voyage9.html">Nouvelle-Zélande</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <a class="contacts" href="#contacts">Contacts</a>
-        </nav>
 
         <main>
             <aside>
@@ -98,13 +21,17 @@
                 <p>Constitué d’une multitude de reliefs, le Nord est sillonné d’est en ouest par une double barrière montagneuse de l’Atlas tellien et saharien, 
                     les forêts et les parcs nationaux embellissent et égaillent les paysages. 
                     Le climat varie de méditerranéen dans les villes du nord, semi-aride dans les hauts plateaux à saharien au sud.
-                <h3>Réserver un vol</h3>
+                <h2>Réserver un vol</h2>
                 <button class="button1"><a href="https://airalgerie.dz/planifier-votre-voyage/reservation/reservation-en-ligne/">Air Algérie</a></button>
                 <button class="button2"><a href="https://wwws.airfrance.fr/">Air France</a></button>
+
+                <h2>Gastronomie</h2>
+                <p></p>
             </aside>
 
             <article>
-                <div class="intro">
+                <section class="presentation">
+                    <div class="intro">
                         <div class="container">
                             <img src="../images/algerie2.jpg" alt="littoral" style="width:100%;">
                             <div class="content">
@@ -112,76 +39,91 @@
                                 <p>Un joyaux du littoral Mediterranéen</p>
                             </div>
                         </div>
-                      <p>Pays d’Afrique du Nord, l'Algérie est un grand pays dont la richesse foisonne tant par la culture de sa population hospitalière et chaleureuse, 
-                      que par la richesse de son patrimoine historique exprimée à travers les innombrables styles architecturaux aux quatre coins du pays.</p>
-                      <p>L’Algérie bénéficie d'atouts naturels importants qui ont de tout temps attiré les convoitises. 
-                      La culture algérienne est riche, variée et très ancienne, chaque région, chaque ville ou oasis constitue un espace culturel particulier à découvrir.</p>    
-                </div>
+                        <p>Pays d’Afrique du Nord, l'Algérie est un grand pays dont la richesse foisonne tant par la culture de sa population hospitalière et chaleureuse, 
+                        que par la richesse de son patrimoine historique exprimée à travers les innombrables styles architecturaux aux quatre coins du pays.</p>
+                        <p>L’Algérie bénéficie d'atouts naturels importants qui ont de tout temps attiré les convoitises. 
+                        La culture algérienne est riche, variée et très ancienne, chaque région, chaque ville ou oasis constitue un espace culturel particulier à découvrir.</p>    
+                    </div>
 
-                <div class="tableau">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th colspan="3" align="center">Quelques villes</th>
-                            </tr>
-                        </thead>
-  
-                        <tbody>
-                            <tr>
-                                <td>ADRAR</td>
-                                <td>ALGER</td>
-                                <td>BEJAIA</td>
-                            </tr>
+                    <div class="tableau">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="3" align="center">Quelques villes</th>
+                                </tr>
+                            </thead>
+        
+                            <tbody>
+                                <tr>
+                                    <td>ADRAR</td>
+                                    <td>ALGER</td>
+                                    <td>BEJAIA</td>
+                                </tr>
 
-                            <tr>
-                                <td><img src="../images/adrar.jpg"</td>
-                                <td><img src="../images/alger.jpg"</td>
-                                <td><img src="../images/bejaia.jpg"</td>
-                            </tr>
+                                <tr>
+                                    <td><img src="../images/adrar.jpg"</td>
+                                    <td><img src="../images/alger.jpg"</td>
+                                    <td><img src="../images/bejaia.jpg"</td>
+                                </tr>
 
-                            <tr>
-                                <td>CONSTANTINE</td>
-                                <td>TAMANRASET</td>
-                                <td>TIMIMOUN</td>
-                            </tr>
-                            <tr>
-                                <td><img src="../images/constantine.jpg"</td>
-                                <td><img src="../images/tamenrasset.jpg"</td>
-                                <td><img src="../images/timimoun.jpg"</td>
-                            </tr>
-                        </tbody>
+                                <tr>
+                                    <td>CONSTANTINE</td>
+                                    <td>TAMANRASET</td>
+                                    <td>TIMIMOUN</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../images/constantine.jpg"</td>
+                                    <td><img src="../images/tamenrasset.jpg"</td>
+                                    <td><img src="../images/timimoun.jpg"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Que vous soyez aimiez la montagne, le désert, la mer, 
+                        ou plutôt les villes animées, vous trouverez forcément de quoi satisfaire votre curiosité dans ce grand pays!</p>
+    
+                </section>
 
-                    </table>
-                </div>
-                <p>Que vous soyez aimiez la montagne, le désert, la mer, ou plutôt les villes animées, vous trouverez forcément de quoi satisfaire votre curiosité dans ce grand pays!</p>
+                <section class="villes">
+                    <h1>ADRAR</h1>
+                        <h2>Ville du Sahara</h2>
+                            <p>Située à 1400 km au sud-ouest d’Alger en plein désert, d’abord lieu de refuge important par ses oasis, 
+                                Adrar devient un véritable carrefour commercial entre le Nord et le Sud de l'Algérie.</p>
+                            <p>Le tourisme n'y est pas encore très développé, ce qui en fait une destination de choix pour les personnes en quête d'aventure et de dépaysement.
+                                Il vaut mieux s'y rendre en janvier ou février car les étés y sont très chauds, avec des moyennes de température de 37°C et des températures allant jusque 46°C.
+                            </p>
+                            <p>Les paysages y sont manifiques: des océans de sable sans fin d'où foisonnent des oasis, havres de paix dans ces giigantesques étendues dorées.</p>
+                            <p>On peut y faire des randonnées en quad, à dos de chameau ou simplement pédestres. Le dépaysment est garanti!</p>
+                    <h1>ALGER</h1>
+                        <h2>Capitale et plus grande ville du pays</h2>
+                            <p>Plus grande agglomération du Maghreb, Alger est la ville incontournable d'Algérie. 
+                            Non seulement par son ouverture sur le monde mais aussi par la richesse de son patrimoine architectural.</p>
+                            <p>C'est une excellente destination en été, de par sa localisation en bord de mer.</p>
+                            <p>Il existe plusieurs stations balnéaires à quelques dizaines de kilomètres de la ville, de nombreuses plages également.</p>
+                    <h1>BEJAIA</h1>
+                        <h2>Capitale de Hammadites</h2>
+                            <p>Cette ville à l'est d'Alger est un ancien comptoir phénicien qui a été développé par les Romains pour devenir une ville portuaire. C'est 
+                                au XIe siècle que la ville a subi son plus important développement car c'est à cette période que la ville devient un centre de construction navale renommé.</p>
+                            <p>De nos jours, malgré l'activité pétrolière voisine, c'est un endroit fort sympatique à visiter car le centre-ville et ses environs est très charmant et les amoureux de la nature
+                                seront émerveillés par le Pic des Singes. </p>
+                    <h1>CONSTANTINE</h1>
+                        <h2>Plus de 2500 ans d'Histoire</h2>
+                            <p>L'une des plus belles villes d'Algérie, elle a conservé de nombreuses activités artisanales comme la broderie sur velours, la dinanderie, la chaudronnerie, la sculpture sur bois ou la poterie.</p>
+                            <p>C'est aussi une ville de musique traditionnelle: le malouf de Constantine, un répertoire de musique savante arabo-andalouse.</p>
+                            <p>Capitale de la culture islamique entre 2015 et 1016, le tourisme a permis de nombreuses rénovations et nouveaux chantiers dans le centre-ville.</p>
+                            <p>Parmis les nombreux endroits incontournables à visiter, on notera les 7 ponts qui relients les deux rives de la villes séparées par les gorges du Rhummel. Ces ponts sont suspendus jusqu'à 175m de hauteur pour le plus haut!</p>
+                            <p>Il ya aussi le "boulevard de l'abîme", surplombant la vallée d'El Hamma. Le chateau du Bey, le monument aux morts, le théatre,...</p>
+                    <h1>TAMANRASET</h1>
+                        <h2>La perle du Sahara</h2>
+                            <p>Capitale du Hoggar, c'est une des plus importantes destination touristiques du pays. De nombreux sites archéologiques telles que des peintures rupestres, témoignent des premières manifestations humaines.</p>
+                            <p>Il faut absolument visiter le parc national de l'Ahaggar, le tombeau de Tin Hinan et le bordj (Tour) du Père de Foucauld!</p>
+                    <h1>TIMIMOUN</h1>
+                        <h2>Capitale de la région du Gourara</h2>
+                            <p>Caractérisée par la couleur ocre rouge de ses habitations, on la surnomme l'oasis rouge. 
+                            Elle surplombe une palmeraie magnifique qui a remplacé la "Sebka", un ancien lac salé.</p>
+                            <p>La particuliarité de ces oasis est la forggar: un système d'irrigation ancestral qui répartie l'eau de façon égale dans la cité. Ce patrimoine immatériel est fascinant à observer, tout comme l'architecture exceptionnelle des constructions d'argile et de sable... </p>
+                </section>
             </article>
         </main>
-
-        <footer>
-            <div class="footer-heading footer-1">
-                <h2>Les Voyages</h2>
-                <a href="#">Alexandre</a>
-                <a href="#">Ismaïl</a>
-                <a href="#">Yonathan</a>
-            </div>
-            <div class="footer-heading footer-2">
-                <h2>Nous contacter</h2>
-                <a href="#">Alexandre</a>
-                <a href="#">Ismaïl</a>
-                <a href="#">Yonathan</a>
-            </div>
-            <div class="footer-heading footer-4">
-                <h2>Réseaux Sociaux</h2>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Youtube</a>
-                <a href="#">Twitter</a>
-            </div>
-            <div class="footer-email-form">
-                <h2>Inscrivez-vous à notre newsletter</h2>
-                <input type="email" placeholder="Entrez votre adresse mail" id="footer-email">
-                <input type="submit" value="Valider" id="footer-email-btn">
-            </div>
-        </footer>
     </body>
 </html>
