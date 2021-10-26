@@ -158,7 +158,7 @@ header {
   .loader__innerring {
     position: absolute;
     width: 26%;
-    top: 290px;
+    top: 240px;
     left: 37%;
     animation: pivote 3s linear infinite;
     z-index: auto;
@@ -252,11 +252,11 @@ header {
 }
 @keyframes translate{
     from{
-      top: 425%;
+      top: 415%;
       left: 23%;
     }
     to{
-      top: 415%;
+      top: 405%;
       left: 76%;
     }
 }
