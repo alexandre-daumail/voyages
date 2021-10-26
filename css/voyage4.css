@@ -52,111 +52,111 @@ align-items: center;
 .card{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon1.jpg);
+  background-image: url(../images/japon1.jpg);
   background-size:cover;
 }.card2{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon2.jpg);
+  background-image: url(../images/japon2.jpg);
   background-size:cover;
 
 }.card3{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon3.jpg);
+  background-image: url(../images/japon3.jpg);
   background-size:cover;
  }.card4{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon4.jpg);
+  background-image: url(../images/japon4.jpg);
   background-size:cover;
 }.card5{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon5.jpg);
+  background-image: url(../images/japon5.jpg);
   background-size:cover;
 }.card6{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon6.jpg);
+  background-image: url(../images/japon6.jpg);
   background-size:cover;
 }.card7{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon7.jpg);
+  background-image: url(../images/japon7.jpg);
   background-size:cover;
 }.card8{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon8.jpg);
+  background-image: url(../images/japon8.jpg);
   background-size:cover;
 }.card9{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon9.jpg);
+  background-image: url(../images/japon9.jpg);
   background-size:cover;
 }.card10{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon10.jpg);
+  background-image: url(../images/japon10.jpg);
   background-size:cover;
 }.card11{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon11.jpg);
+  background-image: url(../images/japon11.jpg);
   background-size:contain auto;
 
 }.card12{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon12.jpg);
+  background-image: url(../images/japon12.jpg);
   background-size:cover;
 }
 .card13{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon13.jpg);
+  background-image: url(../images/japon13.jpg);
   background-size:cover;
 }
 .card14{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon14.jpg);
+  background-image: url(../images/japon14.jpg);
   background-size:cover;
 }
 .card15{
   width: 16%;
   height: 160px;
-  background-image: url(../image/japon15.jpg);
+  background-image: url(../images/japon15.jpg);
   background-size:cover;
 }.card16{
   width: 16%;
   height: 160px;
-  background-image: url(../image/Japon16.jpg);
+  background-image: url(../images/japon16.jpg);
   background-size: cover;
 }.card17{
   width: 16%;
   height: 160px;
-  background-image: url(../image/Japon17.jpg);
+  background-image: url(../images/Japon17.jpg);
   background-size:cover;
  
 }.card18{
   width: 16%;
   height: 160px;
-  background-image: url(../image/Japon18.jpg);
+  background-image: url(../images/Japon18.jpg);
   background-size:cover;
 
 }.card19{
   width: 16%;
   height: 160px;
-  background-image: url(../image/Japon19.jpg);
+  background-image: url(../images/Japon19.jpg);
   background-size:cover;
 }
 /* <!-- Texte de bienvenue --> */
 .flex{
   display: flex;
   justify-content: space-evenly;
-  background-image: url(../image/fondjap1.jpg);
+  background-image: url(../images/fondjap1.jpg);
   background-size: cover; 
 }
 .flex2{
@@ -167,14 +167,14 @@ text-align: center;
 .flex3{
   width: 100%;
   height: 0 auto;
-  background-image: url(../image/fondjap2.jpg);
+  background-image: url(../images/fondjap2.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .flex4{
   width: 100%;
-  background-image: url(../image/fondjap1.jpg);
+  background-image: url(../images/fondjap1.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
