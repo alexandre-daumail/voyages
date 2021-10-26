@@ -35,6 +35,16 @@ font-size: 40px;
   font-weight: bold;
 }
 /* HEADER */
+header{
+  background-image: url(../images/japfond.jpg);
+  color: whitesmoke !important;
+  text-shadow: -1px -1px 0 #C60000, 1px -1px 0 #C60000, -1px 1px 0 #C60000, 1px 1px 0 #C60000 !important;
+}
+.home{
+  color: whitesmoke !important;
+  text-shadow: -1px -1px 0 #C60000, 1px -1px 0 #C60000, -1px 1px 0 #C60000, 1px 1px 0 #C60000 !important;
+  text-decoration: none;
+}
 /* MAIN */
 
 /* Mosaique d'images */
@@ -375,4 +385,11 @@ color: #C60000;
 .japbutton:hover{
  color: whitesmoke;
  background-color: #C60000;
+}
+/* FOOTER */
+footer{
+  background-color: #FC9DA5;
+  color: whitesmoke !important;
+  text-shadow: -1px -1px 0 #C60000, 1px -1px 0 #C60000, -1px 1px 0 #C60000, 1px 1px 0 #C60000 !important;
+width: 100% !important;
 }

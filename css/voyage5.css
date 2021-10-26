@@ -13,7 +13,7 @@ main{
 {
  width: 100%;
  height: 500px ;
- background-image: url(../image/marocpres.jpg);
+ background-image: url(../images/marocpres.jpg);
  background-size: cover;
  display: flex;
  flex-direction: column;
@@ -88,7 +88,7 @@ h3{
     
 }
 .activcard{
-    background-image: url(../image/maroc2.jpeg);
+    background-image: url(../images/maroc2.jpeg);
     width: 30% auto;
     height: 225px;
     margin: 3px;
@@ -97,14 +97,14 @@ h3{
 
 }
 .activcard2{
-    background-image: url(../image/maroc3.jpeg);
+    background-image: url(../images/maroc3.jpeg);
     width: 30% auto;
     height: 225px;
     margin: 3px;
     background-size: cover;
     border: 2px solid rgba(255, 0, 0, 0.438);
 }.activcard3{
-    background-image: url(../image/maroc4.jpeg);
+    background-image: url(../images/maroc4.jpeg);
     width: 30% auto;
     height: 225px;
     margin: 3px;
@@ -113,7 +113,7 @@ h3{
 
 }
 .activcard4{
-    background-image: url(../image/maroc5.jpeg);
+    background-image: url(../images/maroc5.jpeg);
     width: 30% auto;
     height: 225px;
     margin: 3px;
@@ -124,7 +124,7 @@ h3{
     width: 33% auto;
     height: 500px;
     margin: 5px;
-  background-image: url(../image/maroc1.jpeg) ;
+  background-image: url(../images/maroc1.jpeg) ;
   margin: 3px;
   background-size: cover;
   border: 2px solid rgba(255, 0, 0, 0.418);
@@ -240,4 +240,3 @@ h3{
     font-weight: bold;
     font-size: 35px; color: #E8E8E8;
       }
-}

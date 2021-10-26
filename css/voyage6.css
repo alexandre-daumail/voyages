@@ -1,14 +1,27 @@
 body{
-    background-image: url(../image/australiefond.jpg);
+    background-image: url(../images/australiefond.jpg);
     background-size: cover;
+  
 }
 
 /* HEADER */
+header{
+  background-color: royalblue !important;
+  color: blanchedalmond !important;
+  text-shadow: -1px -1px 0 rgb(160, 155, 155), 1px -1px 0 rgb(160, 155, 155), -1px 1px 0 rgb(160, 155, 155), 1px 1px 0 rgb(160, 155, 155);
+}
+
+.home{
+  color: blanchedalmond !important;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white !important;
+  text-decoration: none;
+}
 /* MAIN */
 main{
     background-color:blanchedalmond;
     border-radius: 1%;
   text-align: center;
+  color: black;
 }
 /* Slider 3D */
   
@@ -70,19 +83,19 @@ main{
   }
   
   #slide1 { 
-      background-image:url(../image/austral2.jpeg);
+      background-image:url(../images/austral2.jpeg);
     background-size: cover;}
   #slide2 { 
-      background-image: url(../image/austral3.jpeg);
+      background-image: url(../images/austral3.jpeg);
     background-size: cover; }
   #slide3 { 
-      background-image: url(../image/austral1.jpeg);
+      background-image: url(../images/austral1.jpeg);
     background-size: cover; }
   #slide4 {  
-      background-image: url(../image/austral4.jpeg);
+      background-image: url(../images/austral4.jpeg);
     background-size: cover; }
   #slide5 {  
-      background-image: url(../image/austral5.jpeg);
+      background-image: url(../images/austral5.jpeg);
     background-size: cover;}
 /* Les activités */
 .activcontent{
@@ -153,3 +166,8 @@ color: whitesmoke;
 }
   
 /* FOOTER */
+footer{
+  background-color: royalblue !important;
+  color: blanchedalmond !important;
+  text-shadow: -1px -1px 0 rgb(160, 155, 155), 1px -1px 0 rgb(160, 155, 155), -1px 1px 0 rgb(160, 155, 155), 1px 1px 0 rgb(160, 155, 155) !important;
+}
