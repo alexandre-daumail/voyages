@@ -8,6 +8,8 @@ background-color: #FFFFFF;
 /* MAIN */
 main{
     font-family: 'Merriweather', serif;
+    background-image: none !important;
+    background-color: white !important;
 }
 .imgcust
 {

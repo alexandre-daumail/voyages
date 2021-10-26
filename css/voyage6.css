@@ -18,10 +18,11 @@ header{
 }
 /* MAIN */
 main{
-    background-color:blanchedalmond;
+    background-color:blanchedalmond !important;
     border-radius: 1%;
   text-align: center;
   color: black;
+  background-image: none !important;
 }
 /* Slider 3D */
   
