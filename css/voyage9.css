@@ -4,11 +4,11 @@
   margin: 0;
 }
 .main1{
-    display: flex;
-    flex-direction: column;
-    background: #37a223;
-    width: 100%;
-    height: auto;
+    display: flex!important;
+    flex-direction: column!important;
+    background: #37a223 !important;
+    width: 100%!important;
+    height: auto!important;
 }
 #sec1{
     display: flex;
@@ -20,24 +20,24 @@
 }
 /* header */
 header {
-  background-color: rgba(49, 20, 216, 0.2);
-  width: 100%;
-  height: 60px;
-  padding-top: 130px;
-  position: absolute;
-  text-shadow: #ff0000 1px 1px 2px;
+  background-color: rgba(49, 20, 216, 0.2)!important;
+  width: 100%!important;
+  height: 60px!important;
+  padding-top: 130px!important;
+  position: absolute!important;
+  text-shadow: #ff0000 1px 1px 2px!important;
 
 }
 .headtitre{
-  height: 100%;
-  position: absolute;
-  left: 34%;
-  top: -50px;
-  max-width: 100%;
+  height: 100%!important;
+  position: absolute!important;
+  left: 34%!important;
+  top: -50px!important;
+  max-width: 100%!important;
 }
 .headtitre img{
-  width: 70%;
-  height: auto;
+  width: 70%!important;
+  height: auto!important;
 }
 .boiteg ul{
   list-style:none;
@@ -343,41 +343,5 @@ header {
 }
 /* FOOTER */
 footer{
-  width: 100%;
-  height: auto;
-  font-size: 35px;
-  background: #37a223;;
-  margin-top: 0;
-  padding-top: 150px;
-  z-index: 50;
-
+  background: #37a223!important;
 }
-.footerbox{
-  display: flex;
-  justify-content:space-evenly;
-  padding-bottom: 50px;
-  line-height: 1.7em;
-}
-.footerbox ul{
-  list-style-image: url(../images/voyage-romantique.png);
-}
-.footerbox ul a{
-  text-decoration: none;
-  color: black;
-}
-.footerbox ul a:hover{
-  background: brown;
-  transition: 0.7s;
-  border-radius: 10px;
-}
-.button{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center
-}
-.button img{
-  width: 70%;
-  height: auto;
-}
-
