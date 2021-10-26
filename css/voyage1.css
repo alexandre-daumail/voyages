@@ -14,13 +14,10 @@ header {
   }
 
 main {
-  box-sizing: border-box;
-    margin-left: 20px;
-    margin-right: 20px;  
-    display: flex;
-    flex-wrap: wrap;
-    line-height: 200%;
-  }
+  display: flex;
+  flex-direction: row;
+  line-height: 2em;
+}
 
 
 aside {
@@ -29,7 +26,7 @@ aside {
     padding: 20px;
   }
   
-article {   
+article {
     flex: 70%;
     background-color: white;
     padding: 20px;
@@ -123,4 +120,10 @@ td {
 
 td img:hover {
     border-image-outset: 2%;
+}
+
+.ville {
+  border: solid;
+  border-color: green;
+  margin: 5px;
 }
