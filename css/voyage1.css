@@ -1,14 +1,6 @@
 
 * {
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-  }
-
-main {
-    margin-left: 20px;
-    margin-right: 20px;  
-    display: flex;
-    flex-wrap: wrap;
   }
 
 header {
@@ -16,16 +8,20 @@ header {
     text-align: center;
     background-image: url(../images/biskra.jpg);
     background-repeat: no-repeat;
-    color: green;
-}
+    background-size: cover;
+    height: 25vh;
+    color: white;
+  }
 
-header h1{
-    font-size: 40px;
-}
+main {
+  box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;  
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 200%;
+  }
 
-header p {
-    font-size: 25px;
-}
 
 aside {
     flex: 30%;
